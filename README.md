@@ -19,7 +19,7 @@ The software is compatible with 64-bit versions of Windows 8.1 and later. Curren
 ## Introduction
 ![header](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/06b5baa8-9c8d-4419-9ad1-a7f8db797a71)
 
-The program calculates the daily or annual altitude of the selected star or object according to its position on Earth and its angular distance to the Moon and displays it on the graph. It also calculates the observable phase range for binary stars or multiple star systems. It also displays astronomical times depending on the location. There is a degree-minute-second or hour-minute-second converter required for astronomy in the program. There is simbad database in the program and 2MASS data from IRSA database is available and you can easily see the information about the celestial object.
+The program calculates the daily or annual altitude of the selected star or object according to its position on Earth and its angular distance to the Moon and displays it on the graph. It also calculates the observable phase range for binary stars or multiple star systems. It also displays astronomical times depending on the location. There is a degree-minute-second or hour-minute-second converter required for astronomy in the program. In the program, you can search Simbad, 2MASS, WISE, Gaia DR3 and ZTF DR19 catalogs at the same time.
 
 Optionally, it also performs elevation correction at sunrise and sunset, but it is important to know the requirements to use this option. Be sure to read the explanations on this subject in the information section of the program or in the gettings started section below.
 

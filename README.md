@@ -8,7 +8,7 @@ IMPORTANT NOTE: Please read the information part of the program before you start
 
 ## Download and Installing Software
 
-The software is compatible with 64-bit versions of Windows 8.1 and later. Currently, the program has a ZIP extension. The setup version will be added soon. After downloading the ZIP, extract the archive and run AstroObserverPlan.exe
+The software is compatible with 64-bit versions of Windows 10 and Windows 11. Currently, the program has a ZIP extension. The setup version will be added soon. After downloading the ZIP, extract the archive and run AstroObserverPlan.exe
 
 [Astro Observer Plan v1.0.0 Download](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v1.0.0/Astro.Observer.Plan.zip)
 

@@ -1,4 +1,5 @@
 # ASTRO OBSERVER PLAN - PySide6
+
 Astronomy software built with Python and PySide 6 for astronomical observations.
 
 IMPORTANT NOTE: Please read the information part of the program before you start using the program. 
@@ -16,6 +17,7 @@ The software is compatible with 64-bit versions of Windows 8.1 and later. Curren
 **Dependencies used in the program** | PySide6, Matplotlib, NumPy, Astroquery, Astropy, Ephem
 
 ## Introduction
+![header](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/06b5baa8-9c8d-4419-9ad1-a7f8db797a71)
 
 The program calculates the daily or annual altitude of the selected star or object according to its position on Earth and its angular distance to the Moon and displays it on the graph. It also calculates the observable phase range for binary stars or multiple star systems. It also displays astronomical times depending on the location. There is a degree-minute-second or hour-minute-second converter required for astronomy in the program. There is simbad database in the program and 2MASS data from IRSA database is available and you can easily see the information about the celestial object.
 
@@ -25,6 +27,8 @@ Optionally, it also performs elevation correction at sunrise and sunset, but it 
 ## Getting Started
 
 ### OBJECT VISIBILITY AND OBSERVABLE PHASE RANGE
+![1](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/701a1cc9-b69c-43a4-b944-fb06bf38dfad)
+
 For object visibility, our program includes 138 observatories. The information of the observatories other than the few observatories we have added is taken from https://github.com/astropy/astropy-data/tree/gh-pages/coordinates. The existing observatory settings cannot be changed. Please select the manual option to make your own settings or edit the settings. You can click the "Edit Settings" button in the location, timezone and telescope limits settings section, fill in the relevant fields and edit the settings with the confirm button. When you open the program again, please click the "Save Settings" button to open the program with the settings you entered before. Please make sure you have entered the correct UTC. If you do not want to see the limits of the telescope on the object visibility graph, you can leave the minimum altitude and maximum altitude values of the telescope blank.
 
 You can select the day you will observe from the Date section. 
@@ -53,6 +57,8 @@ In the astronomical times section, there are important hours for observation. El
 It also contains information about the Moon. You can see the Moon's rise, sunset, percent illuminated and phase for the relevant location and date. The position and phase of the Moon in the sky is very important in scientific observations and astrophotography.
 
 ### ASTRONOMICAL CATALOGS SEARCH
+![6](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/605ad2e3-bfa8-44b5-ba8e-c58b772c2bae)
+
 When you click on the search button on the 2nd line of the main menu, you will see the astronomical catalogs search section. You can search in SIMBAD, 2MASS All-Sky Point Source Catalog, AllWise Source Catalog, Gaia DR3 and ZTF DR 19 catalogues. You can also search in more than one catalogue. You can also limit the SIMBAD search to stars.
 
 Apart from this, when you search in degrees, the search may take a long time if there are many objects in the area. For this reason, we have set a 1 degree limit for now in order for this program to work efficiently and properly. We will find a solution to this in the future, depending on the situation. Enter the area seen by your CCD or CMOS into the FOV value. For now the FOV is limited to a square area. We plan to customize this a lot in the future. After entering the FOV value and selecting the catalogs you want, click on the "Search and Show FOV" button and the search will start and when the search is finished, the results screen will open. The results screen includes an area image depending on your FOV value. You can see the results by clicking on the icons of the catalogs you searched in the vertical menu. Objects that you click or select with arrows in the grid are marked with a red square in the FOV area.
@@ -60,6 +66,10 @@ Apart from this, when you search in degrees, the search may take a long time if 
 In the SIMBAD section, you can filter the results according to color B-V, G-V, U-B, g-r and i-z color indices. In the 2MASS section, you can filter the results according to J-H, H-K, J-K color indices. The reason why we put color indices is that they have an important place in astronomy. It is most commonly used in analysis and is used in the selection of check and comparison stars for observations of double stars or multiple star systems.
 
 For example, when J-H is selected in the 2MASS section, you must enter the J-H value of your main star in the "Index Value" box and then enter a value for a range in the "Range ±" box. For example, let's say the J-H index of our main star is 0.500. When we filter by entering 0.050 in the "Range ±" box, you will only see objects with J-H index between 0.450 and 0.550. These indices and filtering options will help you, but apart from these indices, the characteristics of the main star, the comparison star and the check star, such as their spectral type, object type and whether they show period change or not, whether they show brightness change or not, are also very important. Therefore, do not just stick to this program. We always recommend you analyze in more detail.
+
+![7](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/364b3be2-e9dd-4fe7-a1f9-4b79caf051be)
+![8](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/80cd4e3c-b272-414f-9b92-7724fd4800a0)
+![9](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/2485616a-dd53-4282-a8a2-978496796552)
 
 ## Icons
 The icons used in the program are taken from these addresses:

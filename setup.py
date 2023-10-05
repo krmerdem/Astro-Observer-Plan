@@ -3,7 +3,6 @@ import os
 from cx_Freeze import setup, Executable
 import astropy
 
-# Sanal ortamın içindeki 'lib' klasörünün yolu
 virtual_env_lib = os.path.join(sys.prefix, 'Lib', 'site-packages')
 
 files = ['icon/icon.ico']

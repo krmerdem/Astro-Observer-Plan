@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProgressWindow</class>
+ <widget class="QMainWindow" name="ProgressWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>100</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>250</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>250</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Process</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+background: #1c1c27;
+border-radius: 10px solid #eeeeee;
+}
+
+QLineEdit {
+background: #2d3259;
+border-radius: 10px;
+color: #eeeeee;
+font-family:Arial ;
+padding: 5px;
+}
+
+QLineEdit:focus {
+border: 2px solid #5190CB;
+
+}
+QSpinBox {
+background: #2d3259;
+border-radius: 10px;
+color: #eeeeee;
+font-family:Arial ;
+padding: 3px;
+}
+
+QSpinBox::down-button
+{
+background:transparent;
+}
+
+QSpinBox::up-button
+{
+background:transparent;
+}
+
+QSpinBox::down-arrow
+{
+border-image : url(:/icon/icon/chevron-down-wh.svg);
+width: 15px;
+height:15px;
+}
+
+QSpinBox::up-arrow
+{
+border-image : url(:/icon/icon/chevron-up-wh.svg);
+width: 15px;
+height:15px;
+}
+
+QSpinBox:hover{
+background-color: #524eee;
+}
+
+QDoubleSpinBox:hover{
+background-color: #524eee;
+}
+
+QDoubleSpinBox {
+background: #2d3259;
+border-radius: 10px;
+color: #eeeeee;
+font-family:Arial ;
+padding: 3px;
+}
+
+QDoubleSpinBox::down-button
+{
+background:transparent;
+}
+
+QDoubleSpinBox::up-button
+{
+background:transparent;
+}
+
+QDoubleSpinBox::down-arrow
+{
+border-image : url(:/icon/icon/chevron-down-wh.svg);
+width: 15px;
+height:15px;
+}
+
+QDoubleSpinBox::up-arrow
+{
+border-image : url(:/icon/icon/chevron-up-wh.svg);
+width: 15px;
+height:15px;
+}
+
+QComboBox {
+background: #2d3259;
+border-radius: 7px;
+padding: 5px;
+color: #eeeeee;
+}
+
+QComboBox::drop-down:button{
+border-radius:5px; 
+}
+
+QComboBox::down-arrow{
+image: url(:/icon/icon/chevron-down-wh.svg);
+width: 15px;
+height:15px;
+margin-right:10px;
+
+}
+
+QComboBox:hover{
+background-color: #524eee;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{
+background: #121212;
+}
+QGroupBox {
+background-color: #1c1c27;
+border-radius: 15px;
+	color: rgb(255, 255, 255);
+}
+QGroupBox::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top center;    /* position at the top center */
+                padding: 10px;
+}
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#eeeeee;&quot;&gt;Searching...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="styleSheet">
+       <string notr="true">QProgressBar {
+    min-height: 12px;
+    max-height: 12px;
+    border-radius: 6px;
+}
+QProgressBar::chunk {
+    border-radius: 6px;
+    background-color: #009688;
+}</string>
+      </property>
+      <property name="maximum">
+       <number>0</number>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../icon.qrc"/>
+  <include location="../icon.qrc"/>
+  <include location="../icon.qrc"/>
+  <include location="../icon.qrc"/>
+  <include location="../icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

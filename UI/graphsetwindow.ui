@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GraphSetWindow</class>
+ <widget class="QMainWindow" name="GraphSetWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>290</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>290</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>290</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Astro Observer Plan- Graph Settings</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../icon.qrc">
+    <normaloff>:/icon/icon/settingswin.svg</normaloff>:/icon/icon/settingswin.svg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+background: #1c1c27;
+border-radius: 10px solid #eeeeee;
+}
+
+QLineEdit {
+background: #2d3259;
+border-radius: 10px;
+color: #eeeeee;
+font-family:Arial ;
+padding: 5px;
+}
+
+QLineEdit:focus {
+border: 2px solid #5190CB;
+
+}
+QSpinBox {
+background: #2d3259;
+border-radius: 10px;
+color: #eeeeee;
+font-family:Arial ;
+padding: 3px;
+}
+
+QSpinBox::down-button
+{
+background:transparent;
+}
+
+QSpinBox::up-button
+{
+background:transparent;
+}
+
+QSpinBox::down-arrow
+{
+border-image : url(:/icon/icon/chevron-down-wh.svg);
+width: 15px;
+height:15px;
+}
+
+QSpinBox::up-arrow
+{
+border-image : url(:/icon/icon/chevron-up-wh.svg);
+width: 15px;
+height:15px;
+}
+
+QSpinBox:hover{
+background-color: #524eee;
+}
+
+QDoubleSpinBox:hover{
+background-color: #524eee;
+}
+
+QDoubleSpinBox {
+background: #2d3259;
+border-radius: 10px;
+color: #eeeeee;
+font-family:Arial ;
+padding: 3px;
+}
+
+QDoubleSpinBox::down-button
+{
+background:transparent;
+}
+
+QDoubleSpinBox::up-button
+{
+background:transparent;
+}
+
+QDoubleSpinBox::down-arrow
+{
+border-image : url(:/icon/icon/chevron-down-wh.svg);
+width: 15px;
+height:15px;
+}
+
+QDoubleSpinBox::up-arrow
+{
+border-image : url(:/icon/icon/chevron-up-wh.svg);
+width: 15px;
+height:15px;
+}
+
+QComboBox {
+background: #2d3259;
+border-radius: 7px;
+padding: 5px;
+color: #eeeeee;
+}
+
+QComboBox::drop-down:button{
+border-radius:5px; 
+}
+
+QComboBox::down-arrow{
+image: url(:/icon/icon/chevron-down-wh.svg);
+width: 15px;
+height:15px;
+margin-right:10px;
+
+}
+
+QComboBox:hover{
+background-color: #524eee;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{
+background: #121212;
+}
+QGroupBox {
+background-color: #1c1c27;
+border-radius: 15px;
+	color: rgb(255, 255, 255);
+}
+QGroupBox::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top center;    /* position at the top center */
+                padding: 10px;
+}
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QPushButton" name="confirmBtn">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color:  #6316AC;
+border-radius: 10px;
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+background-color: #765cde;
+}
+
+QPushButton:pressed {
+    background-color: #7e31b5;
+}</string>
+      </property>
+      <property name="text">
+       <string>Confirm and Save</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="graphset_groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>380</width>
+        <height>130</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>550</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{
+color: #eeeeee
+}</string>
+      </property>
+      <property name="title">
+       <string>Graph Settings</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="graphiconlabel">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../icon.qrc">:/icon/icon/bar-chart-2.svg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QCheckBox" name="asttime_checkBox">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Show astronomical time intervals (Staralt)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>15</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <widget class="QWidget" name="graphwidget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QRadioButton{
+color: #eeeeee;
+}
+
+QRadioButton::indicator {
+width: 18px;
+height: 18px;
+border-radius:8px;
+}
+
+QRadioButton::indicator::unchecked
+{
+   background-color: #eeeeee;
+}
+QRadioButton::indicator:unchecked:hover
+{
+    background-color: #6316AC;
+}
+QRadioButton::indicator::checked 
+{
+   background-color: #6fcf97;
+}
+
+QRadioButton::indicator:checked:pressed 
+{
+   background-color: #7e31b5;
+}
+
+QRadioButton::indicator:unchecked:pressed 
+{
+   background-color: #7e31b5;
+}</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item alignment="Qt::AlignVCenter">
+           <widget class="QRadioButton" name="light_radioButton">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Light</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignTop">
+           <widget class="QRadioButton" name="dark_radioButton">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Dark</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QCheckBox" name="moondist_checkBox">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Show moon distance (Staralt)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../icon.qrc"/>
+  <include location="../icon.qrc"/>
+  <include location="../icon.qrc"/>
+  <include location="../icon.qrc"/>
+  <include location="../icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

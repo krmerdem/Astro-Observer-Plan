@@ -1,5 +1,7 @@
 # ASTRO OBSERVER PLAN - PySide6
 
+![header](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/06b5baa8-9c8d-4419-9ad1-a7f8db797a71)
+
 Astronomy software built with Python and PySide 6 for astronomical observations.
 
 IMPORTANT NOTE: Please read the information part of the program before you start using the program. 
@@ -17,7 +19,6 @@ The software is compatible with 64-bit versions of Windows 8.1 and later. Curren
 **Dependencies used in the program** | PySide6, Matplotlib, NumPy, Astroquery, Astropy, Ephem
 
 ## Introduction
-![header](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/06b5baa8-9c8d-4419-9ad1-a7f8db797a71)
 
 The program calculates the daily or annual altitude of the selected star or object according to its position on Earth and its angular distance to the Moon and displays it on the graph. It also calculates the observable phase range for binary stars or multiple star systems. It also displays astronomical times depending on the location. There is a degree-minute-second or hour-minute-second converter required for astronomy in the program. In the program, you can search Simbad, 2MASS, WISE, Gaia DR3 and ZTF DR19 catalogs at the same time.
 

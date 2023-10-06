@@ -91,8 +91,6 @@ In the SIMBAD section, you can filter the results according to color B-V, G-V, U
 
 For example, when J-H is selected in the 2MASS section, you must enter the J-H value of your main star in the "Index Value" box and then enter a value for a range in the "Range ±" box. For example, let's say the J-H index of our main star is 0.366. When we filter by entering 0.01 in the "Range ±" box, you will only see objects with J-H index between 0.356 and 0.376. These indices and filtering options will help you, but apart from these indices, the characteristics of the main star, the comparison star and the check star, such as their spectral type, object type and whether they show period change or not, whether they show brightness change or not, are also very important. Therefore, do not just stick to this program. We always recommend you analyze in more detail.
 
-
-
 ## Icons
 The icons used in the program are taken from these addresses:
 

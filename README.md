@@ -44,6 +44,7 @@ Here 0.8704 is the beginning of the phase and 0.9062 is the end of the phase. Th
 In the "Coordinates of the object" section, enter the coordinates in RA (right ascension) and DEC (declination) formats. Enter the coordinate of only 1 object per line. For example, you should add the coordinates of the star Vega and Rigel as follows (hh:mm:ss dd:mm:ss):
 
 18 36 56.3363 +38 47 01.280
+
 05 14 32.2721 -08 12 05.898
 
 You can change the theme and two properties of the object visibility graph. You can adjust the theme and these features according to your desire by clicking the button with the settings icon on the far right in the object visibility section. In addition, after the graphic appears, you can adjust the settings related to appearance and naming from the upper part according to your desire.

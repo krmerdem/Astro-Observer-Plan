@@ -964,16 +964,4 @@ observatories = {
         "elevation": "198",
         "utc": "+01:00",
     },
-
-    
-
-
-    
-    "Observatory 2": {
-        "latitude": "x2",
-        "longitude": "y2",
-        "elevation": "z2",
-        "utc": "+n2",
-    },
-    # Add more observatories as needed
 }

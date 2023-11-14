@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.5.3
+## Created by: Qt User Interface Compiler version 6.6.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -535,6 +535,17 @@ class Ui_MainWindow(object):
 
         self.gridLayout_7.addWidget(self.top_buttons, 0, 7, 1, 1, Qt.AlignRight|Qt.AlignVCenter)
 
+        self.label_4 = QLabel(self.frame_aukr)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setMinimumSize(QSize(35, 0))
+        self.label_4.setMaximumSize(QSize(35, 16777215))
+        font = QFont()
+        font.setFamilies([u"Segoe UI"])
+        font.setPointSize(10)
+        self.label_4.setFont(font)
+
+        self.gridLayout_7.addWidget(self.label_4, 0, 1, 1, 1)
+
 
         self.gridLayout_2.addWidget(self.frame_aukr, 0, 0, 1, 2)
 
@@ -608,9 +619,6 @@ class Ui_MainWindow(object):
         self.daylighttextlabel.setObjectName(u"daylighttextlabel")
         self.daylighttextlabel.setMinimumSize(QSize(85, 30))
         self.daylighttextlabel.setMaximumSize(QSize(16777215, 30))
-        font = QFont()
-        font.setFamilies([u"Segoe UI"])
-        font.setPointSize(10)
         self.daylighttextlabel.setFont(font)
 
         self.gridLayout_11.addWidget(self.daylighttextlabel, 1, 1, 1, 1)
@@ -3106,6 +3114,7 @@ class Ui_MainWindow(object):
         self.minimizeButton.setText("")
         self.restoreButton.setText("")
         self.closeButton.setText("")
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#eeeeee;\">v23.2</span></p></body></html>", None))
         self.astinf_groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Astronomical Times", None))
         self.daylighttextlabel.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">Daylight</span></p></body></html>", None))
         self.elevcoryes_radioBtn.setText(QCoreApplication.translate("MainWindow", u"Yes", None))

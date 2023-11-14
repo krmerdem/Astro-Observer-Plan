@@ -66,11 +66,11 @@ Also, when you search from Simbad, you will see informations about the relevant 
 
 The Staralt option gives the altitude of the related object or objects on the date you selected. When Staralt is selected, when you click the "Show Object Visibility" button, the values written on the related object or objects every hour on the graph that comes before you are the angular distance value of the related object to the Moon. It also automatically adds the name of the relevant object to the chart. It gets the names from the simbad database. 
 
-![staralt](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/d2240b32-5ede-4ca5-8d3d-5404ca29bc64)
+![g1](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/49f0dba2-dbb1-447c-836c-885c56806eb5)
 
 Starobs, on the other hand, gives the one-year altitude values of the related object or objects.
 
-![starobs](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/cb66934d-a83b-42e5-8c12-36c3a464f012)
+![g2](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/71c95e23-fce2-401c-b6f7-3dc7471ae6f1)
 
 In the astronomical times section, there are important hours for observation. Elevation(for sea level) correction option should be used under certain conditions. For example, for an observer on a mountain, it would be correct to use this option if the horizon line is below its current position. In summary, consider the horizon line at sea level and consider an observer on the mountain at this position. This option corrects for sunrise and sunset, taking into account elevation in addition to atmospheric refraction and solar disk diameter.
 It also contains information about the Moon. You can see the Moon's rise, sunset, percent illuminated and phase for the relevant location and date. The position and phase of the Moon in the sky is very important in scientific observations and astrophotography.

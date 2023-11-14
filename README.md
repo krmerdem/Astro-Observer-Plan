@@ -10,7 +10,7 @@ IMPORTANT NOTE: Please read the information part of the program before you start
 
 The software is compatible with 64-bit versions of Windows 10 and Windows 11. Currently, the program has a ZIP extension. In our next update, we will add the setup version of the software and compile the software for Linux. After downloading the ZIP, extract the archive and run AstroObserverPlan.exe
 
-[Astro Observer Plan v23.2 Download]((https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2/Astro.Observer.Plan.zip))
+[Astro Observer Plan v23.2 Download](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2/Astro.Observer.Plan.zip)
 
 ## Installing Dependencies
 

@@ -31,7 +31,7 @@ Optionally, it also performs elevation correction at sunrise and sunset, but it 
 
 For object visibility, our program includes 138 observatories. The information of the observatories other than the few observatories we have added is taken from https://github.com/astropy/astropy-data/tree/gh-pages/coordinates. The existing observatory settings cannot be changed. Please select the manual option to make your own settings or edit the settings. You can click the "Edit Settings" button in the location, timezone and telescope limits settings section, fill in the relevant fields and edit the settings with the confirm button. When you open the program again, please click the "Save Settings" button to open the program with the settings you entered before. Please make sure you have entered the correct UTC. If you do not want to see the limits of the telescope on the object visibility graph, you can leave the minimum altitude and maximum altitude values of the telescope blank.
 
-![locset](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/679cd93c-888f-4379-962e-f87dc9824fdc)
+![1](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/e6b61680-5996-4a47-8963-6c5535e18807)
 
 ![obs](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/11d22bad-4dcd-4c68-bf76-e2a2ea223b88)
 
@@ -54,15 +54,15 @@ In the "Coordinates of the object" section, enter the coordinates in RA (right a
 
 05 14 32.2721 -08 12 05.898
 
-![add](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/9358e355-ea37-4e49-ac7a-37dc72d2dfcd)
+![11](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/c722fc3e-9f27-4b96-a262-a70a931037c6)
 
 You can change the theme and two properties of the object visibility graph. You can adjust the theme and these features according to your desire by clicking the button with the settings icon on the far right in the object visibility section. In addition, after the graphic appears, you can adjust the settings related to appearance and naming from the upper part according to your desire.
 
-![graphset](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/082fc156-f63a-464d-8d90-7675e4b06c92)
+![3](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/b1a903a0-1fba-403d-8207-d3839b89b3d7)
 
 Also, when you search from Simbad, you will see informations about the relevant object. When you click the "+" button, Simbad will add the coordinates of the object you are searching from the database to the "Coordinates of the object" part. You can search the Simbad database by object name or coordinate. The query region option shows the objects in the area you specify. If you want to see only the information of the main object while searching (especially with the name), we recommend that you search in the range of 5-10 arcmin in the query region option. Apart from that, when you search in degrees, if there are too many objects in the area, the search may take a long time. For this reason, we have set a 1 degree limit for this program to work efficiently and properly for now. In the future, we will find a solution to this depending on the situation.
 
-![add](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/92b1aabc-0088-4375-a2e1-a469765a407e)
+![2](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/ab0519bb-3b56-47cf-b162-15a41024b7ba)
 
 The Staralt option gives the altitude of the related object or objects on the date you selected. When Staralt is selected, when you click the "Show Object Visibility" button, the values written on the related object or objects every hour on the graph that comes before you are the angular distance value of the related object to the Moon. It also automatically adds the name of the relevant object to the chart. It gets the names from the simbad database. 
 
@@ -79,15 +79,18 @@ It also contains information about the Moon. You can see the Moon's rise, sunset
 
 When you click on the search button on the 2nd line of the main menu, you will see the astronomical catalogs search section. You can search in SIMBAD, 2MASS All-Sky Point Source Catalog, AllWise Source Catalog, Gaia DR3 and ZTF DR 19 catalogues. You can also search in more than one catalogue. You can also limit the SIMBAD search to stars.
 
-![catalog](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/a7cca9fc-eeba-452b-bee3-1f57652b7693)
+![4](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/b8b4c20f-36b6-416a-b267-295c450475a8)
+
+![5](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/427b606a-5fed-457d-b350-d45c6b6b0b1a)
+
 
 Apart from this, when you search in degrees, the search may take a long time if there are many objects in the area. For this reason, we have set a 1 degree limit for now in order for this program to work efficiently and properly. We will find a solution to this in the future, depending on the situation. Enter the area seen by your CCD or CMOS into the FOV value. For now the FOV is limited to a square area. We plan to customize this a lot in the future. After entering the FOV value and selecting the catalogs you want, click on the "Search and Show FOV" button and the search will start and when the search is finished, the results screen will open. The results screen includes an area image depending on your FOV value. You can see the results by clicking on the icons of the catalogs you searched in the vertical menu. Objects that you click or select with arrows in the grid are marked with a red square in the FOV area.
 
-![catalog2](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/0b85d75d-9ff7-43b1-a402-fc7b720ef0aa)
+![6](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/a9d06ef2-8aad-43b5-bc4a-e0b80465537c)
 
 In the SIMBAD section, you can filter the results according to color B-V, G-V, U-B, g-r and i-z color indices. In the 2MASS section, you can filter the results according to J-H, H-K, J-K color indices. The reason why we put color indices is that they have an important place in astronomy. It is most commonly used in analysis and is used in the selection of check and comparison stars for observations of double stars or multiple star systems.
 
-![filtered](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/1e787b16-a97e-423a-82f7-bb9aaf5fea83)
+![7](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/7eac586b-296c-4f0e-bf48-c595d8c22a78)
 
 For example, when J-H is selected in the 2MASS section, you must enter the J-H value of your main star in the "Index Value" box and then enter a value for a range in the "Range ±" box. For example, let's say the J-H index of our main star is 0.366. When we filter by entering 0.01 in the "Range ±" box, you will only see objects with J-H index between 0.356 and 0.376. These indices and filtering options will help you, but apart from these indices, the characteristics of the main star, the comparison star and the check star, such as their spectral type, object type and whether they show period change or not, whether they show brightness change or not, are also very important. Therefore, do not just stick to this program. We always recommend you analyze in more detail.
 

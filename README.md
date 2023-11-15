@@ -81,10 +81,10 @@ When you click on the search button on the 2nd line of the main menu, you will s
 
 ![4](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/b8b4c20f-36b6-416a-b267-295c450475a8)
 
-![5](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/427b606a-5fed-457d-b350-d45c6b6b0b1a)
-
 
 Apart from this, when you search in degrees, the search may take a long time if there are many objects in the area. For this reason, we have set a 1 degree limit for now in order for this program to work efficiently and properly. We will find a solution to this in the future, depending on the situation. Enter the area seen by your CCD or CMOS into the FOV value. For now the FOV is limited to a square area. We plan to customize this a lot in the future. After entering the FOV value and selecting the catalogs you want, click on the "Search and Show FOV" button and the search will start and when the search is finished, the results screen will open. The results screen includes an area image depending on your FOV value. You can see the results by clicking on the icons of the catalogs you searched in the vertical menu. Objects that you click or select with arrows in the grid are marked with a red square in the FOV area.
+
+![5](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/427b606a-5fed-457d-b350-d45c6b6b0b1a)
 
 ![6](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/a9d06ef2-8aad-43b5-bc4a-e0b80465537c)
 

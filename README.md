@@ -10,7 +10,23 @@ IMPORTANT NOTE: Please read the information part of the program before you start
 
 The software is compatible with 64-bit versions of Windows 10 and Windows 11. Currently, the program has a ZIP extension. In our next update, we will add the setup version of the software and compile the software for Linux. After downloading the ZIP, extract the archive and run AstroObserverPlan.exe
 
-[Astro Observer Plan v23.2 Download](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2/Astro.Observer.Plan.zip)
+[Astro Observer Plan v23.2 Download - (Windows 10/11 x64)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2/Astro.Observer.Plan.zip)
+
+Instructions to run on Ubuntu:
+Follow the necessary steps to make it work in two different window managers: x11 and wayland.
+- Open the terminal and enter the following command.
+
+  sudo apt install libxcb-*
+
+- After the installation is completed, right-click on the AstroObserverPlan.tar.gz file and click extract.
+- Alternatively, open a terminal where the AstroObserverPlan.tar.gz archive is located and enter the following command:
+
+  tar -xvf AstroObserverPlan.tar.gz
+
+- After the extraction process is completed, enter the folder and right-click on AstroObserverPlan. "Executable as Program" at the bottom of the window should be checked or open. After this stage, you can run the program by double-clicking on AstroObserverPlan.
+- Alternatively, go into the AstroObserverPlan folder, right-click on an empty area and click "Open in terminal". You can open the program by typing ./AstroObserverPlan into the terminal.
+
+[Astro Observer Plan v23.2 Download - (Ubuntu 22.04+)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2/AstroObserverPlan.tar.gz)
 
 ## Installing Dependencies
 

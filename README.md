@@ -30,7 +30,7 @@ Follow the necessary steps to make it work in two different window managers: x11
 
 ## Installing Dependencies
 
-**INFO** | When the program is downloaded, the dependencies that it needs are available in the program. The program has been tested and works on Windows 10 and Windows 11 operating systems.
+**INFO** | When the program is downloaded, the dependencies that it needs are available in the program. The program has been tested and works on Windows 10, Windows 11, Ubuntu 22.04 and Ubuntu 23.10 operating systems.
 
 **Dependencies used in the program** | PySide6, Matplotlib, NumPy, Astroquery, Astropy, Ephem
 

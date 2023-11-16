@@ -3970,7 +3970,30 @@ border-top-left-radius: 10px;
   </customwidget>
  </customwidgets>
  <tabstops>
+  <tabstop>genindexBtn</tabstop>
   <tabstop>pointer_horizontalSlider</tabstop>
+  <tabstop>mainid_lineEdit</tabstop>
+  <tabstop>radec_lineEdit</tabstop>
+  <tabstop>otype_lineEdit</tabstop>
+  <tabstop>sptype_lineEdit</tabstop>
+  <tabstop>magu_lineEdit</tabstop>
+  <tabstop>magb_lineEdit</tabstop>
+  <tabstop>magv_lineEdit</tabstop>
+  <tabstop>magr_lineEdit</tabstop>
+  <tabstop>magi_lineEdit</tabstop>
+  <tabstop>magg_lineEdit</tabstop>
+  <tabstop>magj_lineEdit</tabstop>
+  <tabstop>magh_lineEdit</tabstop>
+  <tabstop>magk_lineEdit</tabstop>
+  <tabstop>tycid_lineEdit</tabstop>
+  <tabstop>hipid_lineEdit</tabstop>
+  <tabstop>ticid_lineEdit</tabstop>
+  <tabstop>twomassid_lineEdit</tabstop>
+  <tabstop>wiseid_lineEdit</tabstop>
+  <tabstop>gaiadr_lineEdit</tabstop>
+  <tabstop>atoid_lineEdit</tabstop>
+  <tabstop>crtsid_lineEdit</tabstop>
+  <tabstop>simbadBtn</tabstop>
   <tabstop>sim_bv_radioButton</tabstop>
   <tabstop>sim_gv_radioButton</tabstop>
   <tabstop>sim_ub_radioButton</tabstop>
@@ -3982,15 +4005,13 @@ border-top-left-radius: 10px;
   <tabstop>sim_showallBtn</tabstop>
   <tabstop>simbad_tableWidget</tabstop>
   <tabstop>irsaBtn</tabstop>
-  <tabstop>simbadBtn</tabstop>
-  <tabstop>gaiaBtn</tabstop>
-  <tabstop>tmass_index_lineEdit</tabstop>
   <tabstop>tmass_jh_radioButton</tabstop>
   <tabstop>tmass_hk_radioButton</tabstop>
   <tabstop>tmass_jk_radioButton</tabstop>
-  <tabstop>tmass_showallBtn</tabstop>
-  <tabstop>tmass_showBtn</tabstop>
+  <tabstop>tmass_index_lineEdit</tabstop>
   <tabstop>tmass_range_lineEdit</tabstop>
+  <tabstop>tmass_showBtn</tabstop>
+  <tabstop>tmass_showallBtn</tabstop>
   <tabstop>tmass_ra_checkBox</tabstop>
   <tabstop>tmass_dec_checkBox</tabstop>
   <tabstop>tmass_magj_checkBox</tabstop>
@@ -4003,26 +4024,30 @@ border-top-left-radius: 10px;
   <tabstop>tmass_hk_checkBox</tabstop>
   <tabstop>tmass_jk_checkBox</tabstop>
   <tabstop>irsa_tableWidget</tabstop>
+  <tabstop>wiseBtn</tabstop>
+  <tabstop>wise_tableWidget</tabstop>
+  <tabstop>gaiaBtn</tabstop>
   <tabstop>gaia_tableWidget</tabstop>
+  <tabstop>ztfBtn</tabstop>
   <tabstop>ztf_tableWidget</tabstop>
+  <tabstop>showallBtn</tabstop>
+  <tabstop>magh_checkBox</tabstop>
+  <tabstop>stype_checkBox</tabstop>
+  <tabstop>fov_lineEdit</tabstop>
+  <tabstop>jh_checkBox</tabstop>
+  <tabstop>bv_checkBox</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>magj_checkBox</tabstop>
+  <tabstop>magv_checkBox</tabstop>
   <tabstop>index_lineEdit</tabstop>
   <tabstop>bv_radioButton</tabstop>
   <tabstop>jh_radioButton</tabstop>
-  <tabstop>showallBtn</tabstop>
-  <tabstop>showBtn</tabstop>
-  <tabstop>range_lineEdit</tabstop>
   <tabstop>ra_checkBox</tabstop>
+  <tabstop>range_lineEdit</tabstop>
+  <tabstop>showBtn</tabstop>
   <tabstop>dec_checkBox</tabstop>
   <tabstop>otype_checkBox</tabstop>
-  <tabstop>stype_checkBox</tabstop>
   <tabstop>magb_checkBox</tabstop>
-  <tabstop>magv_checkBox</tabstop>
-  <tabstop>bv_checkBox</tabstop>
-  <tabstop>magj_checkBox</tabstop>
-  <tabstop>magh_checkBox</tabstop>
-  <tabstop>jh_checkBox</tabstop>
-  <tabstop>tableWidget</tabstop>
-  <tabstop>ztfBtn</tabstop>
  </tabstops>
  <resources>
   <include location="../icon.qrc"/>

@@ -103,18 +103,17 @@ It also contains information about the Moon. You can see the Moon's rise, sunset
 
 When you click on the search button on the 2nd line of the main menu, you will see the astronomical catalogs search section. You can search in SIMBAD, 2MASS All-Sky Point Source Catalog, AllWise Source Catalog, Gaia DR3 and ZTF DR 19 catalogues. You can also search in more than one catalogue. You can also limit the SIMBAD search to stars.
 
-![4](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/b8b4c20f-36b6-416a-b267-295c450475a8)
-
+![4](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/f66ffe17-93ec-429e-a522-b22eadbd73ef)
 
 Apart from this, when you search in degrees, the search may take a long time if there are many objects in the area. For this reason, we have set a 1 degree limit for now in order for this program to work efficiently and properly. We will find a solution to this in the future, depending on the situation. Enter the area seen by your CCD or CMOS into the FOV value. For now the FOV is limited to a square area. We plan to customize this a lot in the future. After entering the FOV value and selecting the catalogs you want, click on the "Search and Show FOV" button and the search will start and when the search is finished, the results screen will open. The results screen includes an area image depending on your FOV value. You can see the results by clicking on the icons of the catalogs you searched in the vertical menu. Objects that you click or select with arrows in the grid are marked with a red square in the FOV area.
 
-![5](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/f7f2682d-30c0-4f55-9cbf-7e8613c26e5e)
+![5](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/c09495ed-b066-4e67-a703-fc2c7e4943b6)
 
-![6](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/a72fd124-b5e3-4a88-b187-426a94cfebc0)
+![6](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/fe2d0e5b-8483-4654-aff9-9af25c8c6fbe)
 
 In the SIMBAD section, you can filter the results according to color B-V, G-V, U-B, g-r and i-z color indices. In the 2MASS section, you can filter the results according to J-H, H-K, J-K color indices. The reason why we put color indices is that they have an important place in astronomy. It is most commonly used in analysis and is used in the selection of check and comparison stars for observations of double stars or multiple star systems.
 
-![7](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/0009071e-e31b-47cd-9788-01e90a58992e)
+![7](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/b6cb49fd-e475-49fb-8065-1b5201895725)
 
 For example, when J-H is selected in the 2MASS section, you must enter the J-H value of your main star in the "Index Value" box and then enter a value for a range in the "Range ±" box. For example, let's say the J-H index of our main star is 0.366. When we filter by entering 0.01 in the "Range ±" box, you will only see objects with J-H index between 0.356 and 0.376. These indices and filtering options will help you, but apart from these indices, the characteristics of the main star, the comparison star and the check star, such as their spectral type, object type and whether they show period change or not, whether they show brightness change or not, are also very important. Therefore, do not just stick to this program. We always recommend you analyze in more detail.
 

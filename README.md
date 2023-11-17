@@ -6,6 +6,14 @@ Astronomy software built with Python and PySide 6 for astronomical observations.
 
 IMPORTANT NOTE: Please read the information part of the program before you start using the program. 
 
+v23.2 Notes
+
+- In astronomical catalog searches, the FOV value increased to 3 decimal places.
+- Necessary adjustments were made to make the simbad search results in the object visibility section more readable.
+- A general information screen about the main object has been added to the catalog search results.
+- Added FOV information display to catalog search results.
+- Ubuntu version added.
+
 ## Download and Installing Software
 
 The software is compatible with 64-bit versions of Windows 10 and Windows 11. Currently, the program has a ZIP extension. After downloading the ZIP, extract the archive and run AstroObserverPlan.exe

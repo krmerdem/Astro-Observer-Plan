@@ -111,7 +111,7 @@ Apart from this, when you search in degrees, the search may take a long time if 
 
 ![6](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/fe2d0e5b-8483-4654-aff9-9af25c8c6fbe)
 
-In the SIMBAD section, you can filter the results according to color B-V, G-V, U-B, g-r and i-z color indices. In the 2MASS section, you can filter the results according to J-H, H-K, J-K color indices. The reason why we put color indices is that they have an important place in astronomy. It is most commonly used in analysis and is used in the selection of check and comparison stars for observations of double stars or multiple star systems.
+In the SIMBAD section, you can filter the results according to color B-V, G-V, U-B, g-r and i-z color indices. In the 2MASS section, you can filter the results according to J-H, H-K, J-K color indices. The reason why we put color indices is that they have an important place in astronomy. It is most commonly used in analysis and is used in the selection of check and comparison stars for observations of binary stars or multiple star systems.
 
 ![7](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/b6cb49fd-e475-49fb-8065-1b5201895725)
 

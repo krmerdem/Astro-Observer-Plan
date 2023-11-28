@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="icon">
+    <file>icon/ubuntu-logo.png</file>
     <file>icon/catalog2.png</file>
     <file>icon/catalog.png</file>
     <file>icon/WISE_logo.png</file>

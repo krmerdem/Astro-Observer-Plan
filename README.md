@@ -7,7 +7,7 @@ Astronomy software built with Python and PySide 6 for astronomical observations.
 IMPORTANT NOTE: Please read the information part of the program before you start using the program. 
 
 v23.2 Notes
-
+- Fixed a bug with coordinates in the search results screen.
 - In astronomical catalog searches, the FOV value increased to 3 decimal places.
 - Necessary adjustments were made to make the simbad search results in the object visibility section more readable.
 - A general information screen about the main object has been added to the catalog search results.

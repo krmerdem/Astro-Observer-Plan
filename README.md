@@ -36,7 +36,7 @@ Follow the necessary steps to make it work in two different window managers: x11
 - After the extraction process is completed, enter the folder and right-click on AstroObserverPlan. "Executable as Program" at the bottom of the window should be checked or open. After this stage, you can run the program by double-clicking on AstroObserverPlan.
 - Alternatively, go into the AstroObserverPlan folder, right-click on an empty area and click "Open in terminal". You can open the program by typing ./AstroObserverPlan into the terminal.
 
-[Astro Observer Plan v23.2 Download - (Ubuntu 22.04+)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2/AstroObserverPlan.tar.gz)
+[Astro Observer Plan v23.2.1 Download - (Ubuntu 22.04+)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2.1/AstroObserverPlan.tar.gz)
 
 ## Installing Dependencies
 

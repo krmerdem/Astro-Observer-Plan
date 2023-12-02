@@ -6,7 +6,9 @@ Astronomy software built with Python and PySide 6 for astronomical observations.
 
 IMPORTANT NOTE: Please read the information part of the program before you start using the program. 
 
-v23.2 Notes
+v23.2.1 Notes
+- Added summer and winter time correction, taking into account daylight saving time. All timezones added.
+- Moon altitudes according to time have been added to the Staralt option.
 - Fixed a bug with coordinates in the search results screen.
 - In astronomical catalog searches, the FOV value increased to 3 decimal places.
 - Necessary adjustments were made to make the simbad search results in the object visibility section more readable.
@@ -18,7 +20,7 @@ v23.2 Notes
 
 The software is compatible with 64-bit versions of Windows 10 and Windows 11. Currently, the program has a ZIP extension. After downloading the ZIP, extract the archive and run AstroObserverPlan.exe
 
-[Astro Observer Plan v23.2 Download - (Windows 10/11 x64)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2/Astro.Observer.Plan.zip)
+[Astro Observer Plan v23.2.1 Download - (Windows 10/11 x64)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2.1/Astro.Observer.Plan.zip)
 
 Instructions to run on Ubuntu:
 Follow the necessary steps to make it work in two different window managers: x11 and wayland.
@@ -34,7 +36,7 @@ Follow the necessary steps to make it work in two different window managers: x11
 - After the extraction process is completed, enter the folder and right-click on AstroObserverPlan. "Executable as Program" at the bottom of the window should be checked or open. After this stage, you can run the program by double-clicking on AstroObserverPlan.
 - Alternatively, go into the AstroObserverPlan folder, right-click on an empty area and click "Open in terminal". You can open the program by typing ./AstroObserverPlan into the terminal.
 
-[Astro Observer Plan v23.2 Download - (Ubuntu 22.04+)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2/AstroObserverPlan.tar.gz)
+[Astro Observer Plan v23.2.1 Download - (Ubuntu 22.04+)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2.1/AstroObserverPlan.tar.gz)
 
 ## Installing Dependencies
 

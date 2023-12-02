@@ -8,6 +8,7 @@ IMPORTANT NOTE: Please read the information part of the program before you start
 
 v23.2.1 Notes
 - Added summer and winter time correction, taking into account daylight saving time. All timezones added.
+- Moon altitudes according to time have been added to the Staralt option.
 - Fixed a bug with coordinates in the search results screen.
 - In astronomical catalog searches, the FOV value increased to 3 decimal places.
 - Necessary adjustments were made to make the simbad search results in the object visibility section more readable.

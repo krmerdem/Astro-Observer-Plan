@@ -42,7 +42,7 @@ Follow the necessary steps to make it work in two different window managers: x11
 
 **INFO** | When the program is downloaded, the dependencies that it needs are available in the program. The program has been tested and works on Windows 10, Windows 11, Ubuntu 22.04 and Ubuntu 23.10 operating systems.
 
-**Dependencies used in the program** | PySide6, Matplotlib, NumPy, Astroquery, Astropy, Ephem
+**Dependencies used in the program** | PySide6, Matplotlib, NumPy, Astroquery, Astropy, Ephem, pytz
 
 ## Introduction
 
@@ -55,7 +55,7 @@ Optionally, it also performs elevation correction at sunrise and sunset, but it 
 
 ### OBJECT VISIBILITY AND OBSERVABLE PHASE RANGE
 
-For object visibility, our program includes 138 observatories. The information of the observatories other than the few observatories we have added is taken from https://github.com/astropy/astropy-data/tree/gh-pages/coordinates. The existing observatory settings cannot be changed. Please select the manual option to make your own settings or edit the settings. You can click the "Edit Settings" button in the location, timezone and telescope limits settings section, fill in the relevant fields and edit the settings with the confirm button. When you open the program again, please click the "Save Settings" button to open the program with the settings you entered before. Please make sure you have entered the correct UTC. If you do not want to see the limits of the telescope on the object visibility graph, you can leave the minimum altitude and maximum altitude values of the telescope blank.
+For object visibility, our program includes 138 observatories. The information of the observatories other than the few observatories we have added is taken from https://github.com/astropy/astropy-data/tree/gh-pages/coordinates. The existing observatory settings cannot be changed. Please select the manual option to make your own settings or edit the settings. You can click the "Edit Settings" button in the location, timezone and telescope limits settings section, fill in the relevant fields and edit the settings with the confirm button. When you open the program again, please click the "Save Settings" button to open the program with the settings you entered before. Please make sure you choose the correct timezone. If you do not want to see the limits of the telescope on the object visibility graph, you can leave the minimum altitude and maximum altitude values of the telescope blank.
 
 ![1](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/ef419110-0cbd-4106-88b8-ff9fbbcd753c)
 

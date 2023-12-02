@@ -817,7 +817,7 @@ background-color: #6316AC;
         <widget class="QLabel" name="label_4">
          <property name="minimumSize">
           <size>
-           <width>35</width>
+           <width>40</width>
            <height>0</height>
           </size>
          </property>
@@ -834,7 +834,7 @@ background-color: #6316AC;
           </font>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#eeeeee;&quot;&gt;v23.2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#eeeeee;&quot;&gt;v23.2.1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -2976,7 +2976,7 @@ color: #eeeeee;
                    </font>
                   </property>
                   <property name="text">
-                   <string>+03:00</string>
+                   <string>Europe/Istanbul</string>
                   </property>
                   <property name="readOnly">
                    <bool>true</bool>

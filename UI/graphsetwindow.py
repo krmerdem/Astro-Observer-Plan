@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'graphsetwindow.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.5.1
+## Created by: Qt User Interface Compiler version 6.6.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -209,20 +209,6 @@ class Ui_GraphSetWindow(object):
 
         self.gridLayout_2.addWidget(self.graphiconlabel, 0, 0, 1, 1)
 
-        self.asttime_checkBox = QCheckBox(self.graphset_groupBox)
-        self.asttime_checkBox.setObjectName(u"asttime_checkBox")
-        font = QFont()
-        font.setFamilies([u"Segoe UI"])
-        font.setPointSize(9)
-        self.asttime_checkBox.setFont(font)
-        self.asttime_checkBox.setStyleSheet(u"")
-
-        self.gridLayout_2.addWidget(self.asttime_checkBox, 3, 0, 1, 2)
-
-        self.verticalSpacer_4 = QSpacerItem(20, 15, QSizePolicy.Minimum, QSizePolicy.Fixed)
-
-        self.gridLayout_2.addItem(self.verticalSpacer_4, 1, 1, 1, 1)
-
         self.graphwidget = QWidget(self.graphset_groupBox)
         self.graphwidget.setObjectName(u"graphwidget")
         self.graphwidget.setMinimumSize(QSize(0, 40))
@@ -263,10 +249,10 @@ class Ui_GraphSetWindow(object):
         self.light_radioButton = QRadioButton(self.graphwidget)
         self.light_radioButton.setObjectName(u"light_radioButton")
         self.light_radioButton.setMinimumSize(QSize(0, 30))
-        font1 = QFont()
-        font1.setFamilies([u"Segoe UI"])
-        font1.setPointSize(10)
-        self.light_radioButton.setFont(font1)
+        font = QFont()
+        font.setFamilies([u"Segoe UI"])
+        font.setPointSize(10)
+        self.light_radioButton.setFont(font)
         self.light_radioButton.setChecked(False)
 
         self.horizontalLayout.addWidget(self.light_radioButton, 0, Qt.AlignVCenter)
@@ -274,7 +260,7 @@ class Ui_GraphSetWindow(object):
         self.dark_radioButton = QRadioButton(self.graphwidget)
         self.dark_radioButton.setObjectName(u"dark_radioButton")
         self.dark_radioButton.setMinimumSize(QSize(0, 30))
-        self.dark_radioButton.setFont(font1)
+        self.dark_radioButton.setFont(font)
         self.dark_radioButton.setChecked(True)
 
         self.horizontalLayout.addWidget(self.dark_radioButton, 0, Qt.AlignTop)
@@ -282,12 +268,36 @@ class Ui_GraphSetWindow(object):
 
         self.gridLayout_2.addWidget(self.graphwidget, 0, 1, 1, 1)
 
+        self.verticalSpacer_4 = QSpacerItem(20, 15, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.gridLayout_2.addItem(self.verticalSpacer_4, 1, 1, 1, 1)
+
+        self.moonalt_checkBox = QCheckBox(self.graphset_groupBox)
+        self.moonalt_checkBox.setObjectName(u"moonalt_checkBox")
+        font1 = QFont()
+        font1.setFamilies([u"Segoe UI"])
+        font1.setPointSize(9)
+        self.moonalt_checkBox.setFont(font1)
+        self.moonalt_checkBox.setStyleSheet(u"")
+        self.moonalt_checkBox.setChecked(True)
+
+        self.gridLayout_2.addWidget(self.moonalt_checkBox, 2, 0, 1, 2)
+
         self.moondist_checkBox = QCheckBox(self.graphset_groupBox)
         self.moondist_checkBox.setObjectName(u"moondist_checkBox")
-        self.moondist_checkBox.setFont(font)
+        self.moondist_checkBox.setFont(font1)
         self.moondist_checkBox.setStyleSheet(u"")
+        self.moondist_checkBox.setChecked(True)
 
-        self.gridLayout_2.addWidget(self.moondist_checkBox, 2, 0, 1, 2)
+        self.gridLayout_2.addWidget(self.moondist_checkBox, 3, 0, 1, 2)
+
+        self.asttime_checkBox = QCheckBox(self.graphset_groupBox)
+        self.asttime_checkBox.setObjectName(u"asttime_checkBox")
+        self.asttime_checkBox.setFont(font1)
+        self.asttime_checkBox.setStyleSheet(u"")
+        self.asttime_checkBox.setChecked(True)
+
+        self.gridLayout_2.addWidget(self.asttime_checkBox, 4, 0, 1, 2)
 
 
         self.gridLayout.addWidget(self.graphset_groupBox, 0, 0, 1, 1)
@@ -307,9 +317,10 @@ class Ui_GraphSetWindow(object):
         self.confirmBtn.setText(QCoreApplication.translate("GraphSetWindow", u"Confirm and Save", None))
         self.graphset_groupBox.setTitle(QCoreApplication.translate("GraphSetWindow", u"Graph Settings", None))
         self.graphiconlabel.setText("")
-        self.asttime_checkBox.setText(QCoreApplication.translate("GraphSetWindow", u"Show astronomical time intervals (Staralt)", None))
         self.light_radioButton.setText(QCoreApplication.translate("GraphSetWindow", u"Light", None))
         self.dark_radioButton.setText(QCoreApplication.translate("GraphSetWindow", u"Dark", None))
+        self.moonalt_checkBox.setText(QCoreApplication.translate("GraphSetWindow", u"Show moon altitude (Staralt)", None))
         self.moondist_checkBox.setText(QCoreApplication.translate("GraphSetWindow", u"Show moon distance (Staralt)", None))
+        self.asttime_checkBox.setText(QCoreApplication.translate("GraphSetWindow", u"Show astronomical time intervals (Staralt)", None))
     # retranslateUi
 

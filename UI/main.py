@@ -537,7 +537,7 @@ class Ui_MainWindow(object):
 
         self.label_4 = QLabel(self.frame_aukr)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setMinimumSize(QSize(35, 0))
+        self.label_4.setMinimumSize(QSize(40, 0))
         self.label_4.setMaximumSize(QSize(35, 16777215))
         font = QFont()
         font.setFamilies([u"Segoe UI"])
@@ -3134,7 +3134,7 @@ class Ui_MainWindow(object):
         self.minimizeButton.setText("")
         self.restoreButton.setText("")
         self.closeButton.setText("")
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#eeeeee;\">v23.2</span></p></body></html>", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#eeeeee;\">v23.2.1</span></p></body></html>", None))
         self.astinf_groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Astronomical Times", None))
         self.daylighttextlabel.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">Daylight</span></p></body></html>", None))
         self.elevcoryes_radioBtn.setText(QCoreApplication.translate("MainWindow", u"Yes", None))
@@ -3331,7 +3331,7 @@ class Ui_MainWindow(object):
         self.comboBox.setItemText(137, QCoreApplication.translate("MainWindow", u"Wright's Tower (UK)", None))
 
         self.eleviconlabel.setText("")
-        self.utclineEdit.setText(QCoreApplication.translate("MainWindow", u"+03:00", None))
+        self.utclineEdit.setText(QCoreApplication.translate("MainWindow", u"Europe/Istanbul", None))
         self.utciconlabel.setText("")
         self.laticonlabel.setText("")
         self.obsiconlabel.setText("")

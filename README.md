@@ -7,6 +7,7 @@ Astronomy software built with Python and PySide 6 for astronomical observations.
 IMPORTANT NOTE: Please read the information part of the program before you start using the program. 
 
 v23.2.1 Notes
+- Windows 10/11 dark mode compatibility has been adjusted.
 - Added summer and winter time correction, taking into account daylight saving time. All timezones added.
 - Moon altitudes according to time have been added to the Staralt option.
 - Fixed a bug with coordinates in the search results screen.

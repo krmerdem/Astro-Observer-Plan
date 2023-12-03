@@ -244,6 +244,44 @@ background: #121212;
        </item>
        <item row="0" column="1">
         <widget class="QSlider" name="pointer_horizontalSlider">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid;
+    height: 1px;
+    background-color: rgb(238, 238, 238);
+    left: 20px; right: 20px;
+    }
+QSlider::handle:horizontal {
+    background-color:#5190CB;
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;
+    margin: -10px -5px;
+    }
+QSlider::handle:horizontal:pressed {
+    background-color: rgb(148, 148, 254);
+}
+QSlider::add-page:horizontal {
+    background: rgb(183, 183, 183);
+	border-radius: 2px;
+}
+QSlider::sub-page:horizontal {
+    background: #5190CB;
+	border-radius: 2px;
+}</string>
+         </property>
          <property name="minimum">
           <number>3</number>
          </property>

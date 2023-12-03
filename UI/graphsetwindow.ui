@@ -142,6 +142,38 @@ QComboBox:hover{
 background-color: #524eee;
 }
 
+QCheckBox::indicator {
+width: 18px;
+height: 18px;
+border-radius:8px;
+}
+
+QCheckBox::indicator::unchecked
+{
+   background-color: #eeeeee;
+}
+QCheckBox::indicator:unchecked:hover
+{
+    background-color: #6316AC;
+}
+QCheckBox::indicator::checked 
+{
+   image: url(:/icon/icon/check.svg)
+}
+
+QCheckBox::indicator:checked:pressed 
+{
+   background-color: #7e31b5;
+}
+
+QCheckBox::indicator:unchecked:pressed 
+{
+   background-color: #7e31b5;
+}
+
+QCheckBox{
+color: #eeeeee;
+}
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">

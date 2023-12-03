@@ -633,6 +633,7 @@ QPushButton:pressed {
        <string notr="true">#frame_aukr{
 background-color: #000000;
 border-radius: 15px;
+border: 0;
 }</string>
       </property>
       <property name="frameShape">
@@ -676,7 +677,10 @@ border-radius: 15px;
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">QPushButton {
+          <string notr="true">QFrame {
+border: 0;
+}
+QPushButton {
 border-radius: 5px;
 background-color:#000000;
 }
@@ -876,8 +880,13 @@ background-color: #6316AC;
       </property>
       <widget class="QWidget" name="objvisPage">
        <property name="styleSheet">
-        <string notr="true">QGroupBox {
+        <string notr="true">QFrame {
+border: 0;
+}
+
+QGroupBox {
 background-color: #1c1c27;
+border: 0;
 border-radius: 15px;
 	color: rgb(255, 255, 255);
 }
@@ -923,7 +932,11 @@ QGroupBox::title {
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">QLineEdit {
+           <string notr="true">QFrame {
+border: 0;
+}
+
+QLineEdit {
 background: transparent;
 border-radius: 0px;
 border-left: 2px solid #DAF7A6;
@@ -4731,6 +4744,11 @@ border-radius: 15px;
                <height>200</height>
               </size>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+border: 0;
+}</string>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -4754,14 +4772,14 @@ border-radius: 15px;
                <widget class="QLabel" name="querylabel">
                 <property name="minimumSize">
                  <size>
-                  <width>100</width>
-                  <height>30</height>
+                  <width>105</width>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>100</width>
-                  <height>30</height>
+                  <width>105</width>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="text">
@@ -4821,8 +4839,20 @@ border-radius: 15px;
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>30</height>
+                  <height>35</height>
                  </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">QLineEdit {
@@ -4853,14 +4883,14 @@ border: 2px solid #5190CB;
                <widget class="QLabel" name="label">
                 <property name="minimumSize">
                  <size>
-                  <width>100</width>
-                  <height>0</height>
+                  <width>105</width>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>100</width>
-                  <height>16777215</height>
+                  <width>105</width>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -4885,13 +4915,13 @@ color: #eeeeee;
                 <property name="minimumSize">
                  <size>
                   <width>80</width>
-                  <height>30</height>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
                   <width>16777215</width>
-                  <height>30</height>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="font">
@@ -4925,13 +4955,13 @@ color: #eeeeee;
                 <property name="minimumSize">
                  <size>
                   <width>850</width>
-                  <height>30</height>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
                   <width>16777215</width>
-                  <height>30</height>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="font">
@@ -4972,35 +5002,39 @@ color: #eeeeee;
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">QRadioButton{
+              <string notr="true">#frame_5 {
+border: 0;
+}
+
+QRadioButton{
 color: #eeeeee;
 }
 
-QRadioButton::indicator {
+QCheckBox::indicator {
 width: 18px;
 height: 18px;
 border-radius:8px;
 }
 
-QRadioButton::indicator::unchecked
+QCheckBox::indicator::unchecked
 {
    background-color: #eeeeee;
 }
-QRadioButton::indicator:unchecked:hover
+QCheckBox::indicator:unchecked:hover
 {
-    background-color: #6316AC;
+    background-color: #5190CB;
 }
-QRadioButton::indicator::checked 
+QCheckBox::indicator::checked 
 {
-   background-color: #6fcf97;
+   image: url(:/icon/icon/check.svg)
 }
 
-QRadioButton::indicator:checked:pressed 
+QCheckBox::indicator:checked:pressed 
 {
    background-color: #7e31b5;
 }
 
-QRadioButton::indicator:unchecked:pressed 
+QCheckBox::indicator:unchecked:pressed 
 {
    background-color: #7e31b5;
 }
@@ -5188,6 +5222,9 @@ border-radius: 15px;
                      <pointsize>10</pointsize>
                     </font>
                    </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
                    <property name="text">
                     <string>SIMBAD</string>
                    </property>
@@ -5304,7 +5341,7 @@ border-radius: 15px;
                <widget class="QFrame" name="wise_frame_cat">
                 <property name="styleSheet">
                  <string notr="true">#wise_frame_cat {
-border: 2px solid#524eee;
+border: 2px solid #524eee;
 border-radius: 15px;
 
 }</string>
@@ -5481,7 +5518,11 @@ border-radius: 15px;
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">QPushButton{
+              <string notr="true">QFrame {
+border: 0;
+}
+
+QPushButton{
 background-color:  #6316AC;
 border-radius: 10px;
 	color: rgb(255, 255, 255);
@@ -5492,7 +5533,8 @@ background-color: #765cde;
     
 QPushButton:pressed {
     background-color: #7e31b5;
-}</string>
+}
+</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -6084,7 +6126,7 @@ p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#d5d5d5;&quot;&gt;INSTRUCTIONS FOR USE AND IMPORTANT NOTES &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ffaa00;&quot;&gt;# OBJECT VISIBILITY AND OBSERVABLE PHASE RANGE&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;For object visibility, our program includes 138 observatories. The information of the observatories other than the few observatories we have added is taken from &lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#d5d5d5;&quot;&gt;https://github.com/astropy/astropy-data/tree/gh-pages/coordinates&lt;/span&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;. The existing observatory settings cannot be changed. Please select the manual option to make your own settings or edit the settings. You can click the &amp;quot;Edit Settings&amp;quot; button in the location, timezone and telescope limits settings section, fill in the relevant fields and edit the settings with the confirm button. When you open the program again, please click the &amp;quot;Save Settings&amp;quot; button to open the program with the settings you entered before. Please make sure you have entered the correct UTC. If you do not want to see the limits of the telescope on the object visibility graph, you can leave the minimum altitude and maximum altitude values of the telescope blank. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;For object visibility, our program includes 138 observatories. The information of the observatories other than the few observatories we have added is taken from &lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#d5d5d5;&quot;&gt;https://github.com/astropy/astropy-data/tree/gh-pages/coordinates&lt;/span&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;. The existing observatory settings cannot be changed. Please select the manual option to make your own settings or edit the settings. You can click the &amp;quot;Edit Settings&amp;quot; button in the location, timezone and telescope limits settings section, fill in the relevant fields and edit the settings with the confirm button. When you open the program again, please click the &amp;quot;Save Settings&amp;quot; button to open the program with the settings you entered before. Please make sure you choose the correct timezone. If you do not want to see the limits of the telescope on the object visibility graph, you can leave the minimum altitude and maximum altitude values of the telescope blank. &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;You can select the day you will observe from the Date section. The program opens with today's date by default. Date is valid for both object visibility and Observable Phase Range part. &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;In the Observable Phase Range on Selected Date section, period should be in days, and reference time should be in julian date. Phase range shows the phase range of the star you selected during the night hours of the date you selected. (for example, binary or multiple star systems). If astronomical night is not available for the current location, if astronomical twilight is available, the phase range is calculated according to the hours of the astronomical twilight interval. &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;For example, the result in Phase Range: &lt;/span&gt;&lt;/p&gt;
@@ -6103,7 +6145,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;When you click on the search button on the 2nd line of the main menu, you will see the astronomical catalogs search section. You can search in SIMBAD, 2MASS All-Sky Point Source Catalog, AllWise Source Catalog, Gaia DR3 and ZTF DR 19 catalogues. You can also search in more than one catalogue. You can also limit the SIMBAD search to stars.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;Apart from this, when you search in degrees, the search may take a long time if there are many objects in the area. For this reason, we have set a 1 degree limit for now in order for this program to work efficiently and properly. We will find a solution to this in the future, depending on the situation. Enter the area seen by your CCD or CMOS into the FOV value. For now the FOV is limited to a square area. We plan to customize this a lot in the future. After entering the FOV value and selecting the catalogs you want, click on the &amp;quot;Search and Show FOV&amp;quot; button and the search will start and when the search is finished, the results screen will open. The results screen includes an area image depending on your FOV value. You can see the results by clicking on the icons of the catalogs you searched in the vertical menu. Objects that you click or select with arrows in the grid are marked with a red square in the FOV area.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#d5d5d5;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;In the SIMBAD section, you can filter the results according to color B-V, G-V, U-B, g-r and i-z color indices. In the 2MASS section, you can filter the results according to J-H, H-K, J-K color indices. The reason why we put color indices is that they have an important place in astronomy. It is most commonly used in analysis and is used in the selection of check and comparison stars for observations of binary stars or multiple star systems.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;In the SIMBAD section, you can filter the results according to color B-V, G-V, U-B, g-r, i-z, J-H, H-K and J-K color indices. In the 2MASS section, you can filter the results according to J-H, H-K, J-K color indices. The reason why we put color indices is that they have an important place in astronomy. It is most commonly used in analysis and is used in the selection of check and comparison stars for observations of binary stars or multiple star systems.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#d5d5d5;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#d5d5d5;&quot;&gt;For example, when J-H is selected in the 2MASS section, you must enter the J-H value of your main star in the &amp;quot;Index Value&amp;quot; box and then enter a value for a range in the &amp;quot;Range ±&amp;quot; box. For example, let's say the J-H index of our main star is 0.500. When we filter by entering 0.050 in the &amp;quot;Range ±&amp;quot; box, you will only see objects with J-H index between 0.450 and 0.550. These indices and filtering options will help you, but apart from these indices, the characteristics of the main star, the comparison star and the check star, such as their spectral type, object type and whether they show period change or not, whether they show brightness change or not, are also very important. Therefore, do not just stick to this program. We always recommend you analyze in more detail.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#d5d5d5;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -6635,6 +6677,7 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://icons8.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#eeeeee;&quot;&gt;https://icons8.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://www.clipartmax.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#eeeeee;&quot;&gt;https://www.clipartmax.com/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://feathericons.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#eeeeee;&quot;&gt;https://feathericons.com/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://feathericons.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#eeeeee;&quot;&gt;https://www.iconpacks.net/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://brandeps.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#eeeeee;&quot;&gt;https://brandeps.com/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://brandeps.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#eeeeee;&quot;&gt;https://cds.unistra.fr/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://brandeps.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#eeeeee;&quot;&gt;https://irsa.ipac.caltech.edu/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;

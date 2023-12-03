@@ -234,6 +234,32 @@ class Ui_resultwindow(object):
 
         self.pointer_horizontalSlider = QSlider(self.frame_4)
         self.pointer_horizontalSlider.setObjectName(u"pointer_horizontalSlider")
+        self.pointer_horizontalSlider.setMinimumSize(QSize(0, 25))
+        self.pointer_horizontalSlider.setMaximumSize(QSize(16777215, 25))
+        self.pointer_horizontalSlider.setStyleSheet(u"QSlider::groove:horizontal {\n"
+"    border: 1px solid;\n"
+"    height: 1px;\n"
+"    background-color: rgb(238, 238, 238);\n"
+"    left: 20px; right: 20px;\n"
+"    }\n"
+"QSlider::handle:horizontal {\n"
+"    background-color:#5190CB;\n"
+"    height: 20px;\n"
+"    width: 20px;\n"
+"    border-radius: 8px;\n"
+"    margin: -10px -5px;\n"
+"    }\n"
+"QSlider::handle:horizontal:pressed {\n"
+"    background-color: rgb(148, 148, 254);\n"
+"}\n"
+"QSlider::add-page:horizontal {\n"
+"    background: rgb(183, 183, 183);\n"
+"	border-radius: 2px;\n"
+"}\n"
+"QSlider::sub-page:horizontal {\n"
+"    background: #5190CB;\n"
+"	border-radius: 2px;\n"
+"}")
         self.pointer_horizontalSlider.setMinimum(3)
         self.pointer_horizontalSlider.setMaximum(20)
         self.pointer_horizontalSlider.setValue(10)

@@ -1,0 +1,8 @@
+{
+    "simcolor": "background-color: #ff5500; border: 2px solid #eeeeee; border-radius: 10px;",
+    "tmasscolor": "background-color: #55ff00; border: 2px solid #eeeeee; border-radius: 10px;",
+    "gaiacolor": "background-color: #ffff7f; border: 2px solid #eeeeee; border-radius: 10px;",
+    "maincolor": "background-color: #ff0000; border: 2px solid #eeeeee; border-radius: 10px;",
+    "compcolor": "background-color: #00ff7f; border: 2px solid #eeeeee; border-radius: 10px;",
+    "checkcolor": "background-color: #ff55ff; border: 2px solid #eeeeee; border-radius: 10px;"
+}

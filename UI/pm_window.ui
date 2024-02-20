@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pecaut_mamajek</class>
+ <widget class="QDialog" name="pecaut_mamajek">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>466</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>465</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Pecaut and Mamajek Teff-SpT</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../icon.qrc">
+    <normaloff>:/icon/icon/parameters.png</normaloff>:/icon/icon/parameters.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+background: #121212;
+}
+
+QTableView {
+background: #2d3259;
+gridline-color:black;
+border-radius: 15px;
+border-color: #000000;
+padding: 10px;
+font-size: 9pt;
+color: #eeeeee;
+}
+
+QTableView::item 
+        {   
+            color: white;
+            background:black;            
+        }
+ QTableView::item:hover
+        {   
+            color: black;
+            background:#ffaa00;            
+        }
+ QTableView::item:focus
+        {   
+            color: #eeeeee;
+            background:#6316AC;            
+        }
+
+QTableView::item:selected {
+    color: #eeeeee;
+    background: #6316AC;
+}
+
+QHeaderView::section {
+
+color:white; 
+background-color:#232326 ;
+border: none;
+border-style:none;
+
+ }
+ QHeaderView {
+    background: #2d3259;
+
+}
+
+QTableCornerButton::section { 
+background-color:#232326; 
+border-top-left-radius: 10px;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: rgb(45, 45, 68);
+    width: 14px;
+    margin: 15px 0 15px 0;
+    border-radius: 0px;
+}
+
+QScrollBar::handle:vertical {    
+    background-color: rgb(80, 80, 122);
+    min-height: 30px;
+    border-radius: 7px;
+}
+
+QScrollBar::handle:vertical:hover {    
+    background-color: rgb(255, 0, 127);
+}
+
+QScrollBar::handle:vertical:pressed {    
+    background-color: rgb(185, 0, 92);
+}
+
+QScrollBar::sub-line:vertical {
+    border: none;
+    background-color: rgb(59, 59, 90);
+    height: 15px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical:hover {    
+    background-color: rgb(255, 0, 127);
+}
+
+QScrollBar::sub-line:vertical:pressed {    
+    background-color: rgb(185, 0, 92);
+}
+
+QScrollBar::add-line:vertical {
+    border: none;
+    background-color: rgb(59, 59, 90);
+    height: 15px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover {    
+    background-color: rgb(255, 0, 127);
+}
+
+QScrollBar::add-line:vertical:pressed {    
+    background-color: rgb(185, 0, 92);
+}
+
+QScrollBar::up-arrow:vertical {
+    border-image: url(:/icon/icon/chevron-up-wh.svg);
+    background: none;
+}
+
+QScrollBar::down-arrow:vertical {
+    border-image: url(:/icon/icon/chevron-down-wh.svg);
+    background: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+ QScrollBar:horizontal {
+    border: none;
+    background: rgb(45, 45, 68);
+    height: 14px;
+    margin: 0 15px 0 15px;
+    border-radius: 0px;
+}
+
+QScrollBar::handle:horizontal {	
+    background-color: rgb(80, 80, 122);
+    min-width: 30px;
+    border-radius: 7px;
+}
+
+QScrollBar::handle:horizontal:hover {	
+    background-color: rgb(255, 0, 127);
+}
+
+QScrollBar::handle:horizontal:pressed {	
+    background-color: rgb(185, 0, 92);
+}
+
+QScrollBar::sub-line:horizontal {
+    border: none;
+    background-color: rgb(59, 59, 90);
+    width: 15px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal:hover {	
+    background-color: rgb(255, 0, 127);
+}
+
+QScrollBar::sub-line:horizontal:pressed {	
+    background-color: rgb(185, 0, 92);
+}
+
+QScrollBar::add-line:horizontal {
+    border: none;
+    background-color: rgb(59, 59, 90);
+    width: 15px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal:hover {	
+    background-color: rgb(255, 0, 127);
+}
+
+QScrollBar::add-line:horizontal:pressed {	
+    background-color: rgb(185, 0, 92);
+}
+
+QScrollBar::left-arrow:horizontal {
+    border-image: url(:/icon/icon/chevron-left-wh.svg);
+    background: none;
+}
+
+QScrollBar::right-arrow:horizontal {
+    border-image: url(:/icon/icon/chevron-right-wh.svg);
+    background: none;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+background: #000221;
+border-radius: 15px;
+
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+color: #eeeeee;
+}</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;A Modern Mean Dwarf Stellar Color and Effective Temperature Sequence&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableWidget" name="pm_tableWidget">
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::DashLine</enum>
+     </property>
+     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+color: #eeeeee;
+background-color:#000221;
+border: 1px solid;
+border-radius: 3px;
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The color indexes of the star selected in the relevant catalog are taken and scanned in the EEM_dwarf_UBVIJHK_colors_Teff table. The two color index values closest to the color index in the catalog are selected from the EEM_dwarf_UBVIJHK_colors_Teff table and the corresponding parameters are displayed.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

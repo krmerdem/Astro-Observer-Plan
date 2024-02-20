@@ -461,6 +461,7 @@ class Ui_MainWindow(object):
         self.frame_aukr.setStyleSheet(u"#frame_aukr{\n"
 "background-color: #000000;\n"
 "border-radius: 15px;\n"
+"border: 0;\n"
 "}")
         self.frame_aukr.setFrameShape(QFrame.StyledPanel)
         self.frame_aukr.setFrameShadow(QFrame.Raised)
@@ -479,7 +480,10 @@ class Ui_MainWindow(object):
         self.top_buttons = QFrame(self.frame_aukr)
         self.top_buttons.setObjectName(u"top_buttons")
         self.top_buttons.setMaximumSize(QSize(120, 16777215))
-        self.top_buttons.setStyleSheet(u"QPushButton {\n"
+        self.top_buttons.setStyleSheet(u"QFrame {\n"
+"border: 0;\n"
+"}\n"
+"QPushButton {\n"
 "border-radius: 5px;\n"
 "background-color:#000000;\n"
 "}\n"
@@ -537,7 +541,7 @@ class Ui_MainWindow(object):
 
         self.label_4 = QLabel(self.frame_aukr)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setMinimumSize(QSize(35, 0))
+        self.label_4.setMinimumSize(QSize(40, 0))
         self.label_4.setMaximumSize(QSize(35, 16777215))
         font = QFont()
         font.setFamilies([u"Segoe UI"])
@@ -579,8 +583,13 @@ class Ui_MainWindow(object):
 "}")
         self.objvisPage = QWidget()
         self.objvisPage.setObjectName(u"objvisPage")
-        self.objvisPage.setStyleSheet(u"QGroupBox {\n"
+        self.objvisPage.setStyleSheet(u"QFrame {\n"
+"border: 0;\n"
+"}\n"
+"\n"
+"QGroupBox {\n"
 "background-color: #1c1c27;\n"
+"border: 0;\n"
 "border-radius: 15px;\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
@@ -603,7 +612,11 @@ class Ui_MainWindow(object):
         self.astinf_groupBox.setSizePolicy(sizePolicy)
         self.astinf_groupBox.setMinimumSize(QSize(330, 0))
         self.astinf_groupBox.setMaximumSize(QSize(350, 16777215))
-        self.astinf_groupBox.setStyleSheet(u"QLineEdit {\n"
+        self.astinf_groupBox.setStyleSheet(u"QFrame {\n"
+"border: 0;\n"
+"}\n"
+"\n"
+"QLineEdit {\n"
 "background: transparent;\n"
 "border-radius: 0px;\n"
 "border-left: 2px solid #DAF7A6;\n"
@@ -2059,40 +2072,20 @@ class Ui_MainWindow(object):
         self.qregframe.setObjectName(u"qregframe")
         self.qregframe.setMinimumSize(QSize(0, 30))
         self.qregframe.setMaximumSize(QSize(16777215, 200))
+        self.qregframe.setStyleSheet(u"QFrame {\n"
+"border: 0;\n"
+"}")
         self.qregframe.setFrameShape(QFrame.StyledPanel)
         self.qregframe.setFrameShadow(QFrame.Raised)
         self.gridLayout_29 = QGridLayout(self.qregframe)
         self.gridLayout_29.setObjectName(u"gridLayout_29")
         self.gridLayout_29.setContentsMargins(0, 6, 0, 6)
-        self.sim_lineEdit = QLineEdit(self.qregframe)
-        self.sim_lineEdit.setObjectName(u"sim_lineEdit")
-        self.sim_lineEdit.setMinimumSize(QSize(0, 30))
-        self.sim_lineEdit.setStyleSheet(u"QLineEdit {\n"
-"background: #2d3259;\n"
-"border-radius: 10px;\n"
-"color: #eeeeee;\n"
-"font-family:Arial ;\n"
-"padding: 5px;\n"
-"}\n"
-"\n"
-"QLineEdit:focus {\n"
-"border: 2px solid #5190CB;\n"
-"\n"
-"}")
-        self.sim_lineEdit.setClearButtonEnabled(True)
+        self.querylabel = QLabel(self.qregframe)
+        self.querylabel.setObjectName(u"querylabel")
+        self.querylabel.setMinimumSize(QSize(105, 35))
+        self.querylabel.setMaximumSize(QSize(105, 35))
 
-        self.gridLayout_29.addWidget(self.sim_lineEdit, 2, 2, 1, 5)
-
-        self.label = QLabel(self.qregframe)
-        self.label.setObjectName(u"label")
-        self.label.setMinimumSize(QSize(100, 0))
-        self.label.setMaximumSize(QSize(100, 16777215))
-        self.label.setStyleSheet(u"QLabel {\n"
-"color: #eeeeee;\n"
-"\n"
-"}")
-
-        self.gridLayout_29.addWidget(self.label, 2, 1, 1, 1)
+        self.gridLayout_29.addWidget(self.querylabel, 0, 1, 1, 1)
 
         self.label_2 = QLabel(self.qregframe)
         self.label_2.setObjectName(u"label_2")
@@ -2111,25 +2104,37 @@ class Ui_MainWindow(object):
 
         self.gridLayout_29.addWidget(self.queryiconlabel, 0, 0, 1, 1)
 
-        self.querylabel = QLabel(self.qregframe)
-        self.querylabel.setObjectName(u"querylabel")
-        self.querylabel.setMinimumSize(QSize(100, 30))
-        self.querylabel.setMaximumSize(QSize(100, 30))
+        self.sim_lineEdit = QLineEdit(self.qregframe)
+        self.sim_lineEdit.setObjectName(u"sim_lineEdit")
+        self.sim_lineEdit.setMinimumSize(QSize(0, 35))
+        self.sim_lineEdit.setMaximumSize(QSize(16777215, 35))
+        self.sim_lineEdit.setFont(font2)
+        self.sim_lineEdit.setStyleSheet(u"QLineEdit {\n"
+"background: #2d3259;\n"
+"border-radius: 10px;\n"
+"color: #eeeeee;\n"
+"font-family:Arial ;\n"
+"padding: 5px;\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"border: 2px solid #5190CB;\n"
+"\n"
+"}")
+        self.sim_lineEdit.setClearButtonEnabled(True)
 
-        self.gridLayout_29.addWidget(self.querylabel, 0, 1, 1, 1)
+        self.gridLayout_29.addWidget(self.sim_lineEdit, 2, 2, 1, 5)
 
-        self.qregion_spinBox = QSpinBox(self.qregframe)
-        self.qregion_spinBox.setObjectName(u"qregion_spinBox")
-        sizePolicy5.setHeightForWidth(self.qregion_spinBox.sizePolicy().hasHeightForWidth())
-        self.qregion_spinBox.setSizePolicy(sizePolicy5)
-        self.qregion_spinBox.setMinimumSize(QSize(0, 30))
-        self.qregion_spinBox.setMaximumSize(QSize(16777215, 30))
-        self.qregion_spinBox.setFont(font4)
-        self.qregion_spinBox.setMinimum(1)
-        self.qregion_spinBox.setMaximum(60)
-        self.qregion_spinBox.setValue(2)
+        self.label = QLabel(self.qregframe)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(105, 35))
+        self.label.setMaximumSize(QSize(105, 35))
+        self.label.setStyleSheet(u"QLabel {\n"
+"color: #eeeeee;\n"
+"\n"
+"}")
 
-        self.gridLayout_29.addWidget(self.qregion_spinBox, 0, 2, 1, 1)
+        self.gridLayout_29.addWidget(self.label, 2, 1, 1, 1)
 
         self.qregion_comboBox = QComboBox(self.qregframe)
         self.qregion_comboBox.addItem("")
@@ -2138,11 +2143,23 @@ class Ui_MainWindow(object):
         self.qregion_comboBox.setObjectName(u"qregion_comboBox")
         sizePolicy4.setHeightForWidth(self.qregion_comboBox.sizePolicy().hasHeightForWidth())
         self.qregion_comboBox.setSizePolicy(sizePolicy4)
-        self.qregion_comboBox.setMinimumSize(QSize(80, 30))
-        self.qregion_comboBox.setMaximumSize(QSize(16777215, 30))
+        self.qregion_comboBox.setMinimumSize(QSize(80, 35))
+        self.qregion_comboBox.setMaximumSize(QSize(16777215, 35))
         self.qregion_comboBox.setFont(font)
 
-        self.gridLayout_29.addWidget(self.qregion_comboBox, 0, 3, 1, 4)
+        self.gridLayout_29.addWidget(self.qregion_comboBox, 0, 6, 1, 1)
+
+        self.qregion_dspinBox = QDoubleSpinBox(self.qregframe)
+        self.qregion_dspinBox.setObjectName(u"qregion_dspinBox")
+        self.qregion_dspinBox.setMinimumSize(QSize(850, 35))
+        self.qregion_dspinBox.setMaximumSize(QSize(16777215, 35))
+        self.qregion_dspinBox.setFont(font2)
+        self.qregion_dspinBox.setDecimals(3)
+        self.qregion_dspinBox.setMaximum(59.999000000000002)
+        self.qregion_dspinBox.setSingleStep(0.100000000000000)
+        self.qregion_dspinBox.setValue(11.840000000000000)
+
+        self.gridLayout_29.addWidget(self.qregion_dspinBox, 0, 2, 1, 4)
 
 
         self.gridLayout_9.addWidget(self.qregframe, 1, 0, 1, 2)
@@ -2151,35 +2168,39 @@ class Ui_MainWindow(object):
         self.frame_5.setObjectName(u"frame_5")
         self.frame_5.setMinimumSize(QSize(0, 200))
         self.frame_5.setMaximumSize(QSize(16777215, 200))
-        self.frame_5.setStyleSheet(u"QRadioButton{\n"
+        self.frame_5.setStyleSheet(u"#frame_5 {\n"
+"border: 0;\n"
+"}\n"
+"\n"
+"QRadioButton{\n"
 "color: #eeeeee;\n"
 "}\n"
 "\n"
-"QRadioButton::indicator {\n"
+"QCheckBox::indicator {\n"
 "width: 18px;\n"
 "height: 18px;\n"
 "border-radius:8px;\n"
 "}\n"
 "\n"
-"QRadioButton::indicator::unchecked\n"
+"QCheckBox::indicator::unchecked\n"
 "{\n"
 "   background-color: #eeeeee;\n"
 "}\n"
-"QRadioButton::indicator:unchecked:hover\n"
+"QCheckBox::indicator:unchecked:hover\n"
 "{\n"
-"    background-color: #6316AC;\n"
+"    background-color: #5190CB;\n"
 "}\n"
-"QRadioButton::indicator::checked \n"
+"QCheckBox::indicator::checked \n"
 "{\n"
-"   background-color: #6fcf97;\n"
+"   image: url(:/icon/icon/check.svg)\n"
 "}\n"
 "\n"
-"QRadioButton::indicator:checked:pressed \n"
+"QCheckBox::indicator:checked:pressed \n"
 "{\n"
 "   background-color: #7e31b5;\n"
 "}\n"
 "\n"
-"QRadioButton::indicator:unchecked:pressed \n"
+"QCheckBox::indicator:unchecked:pressed \n"
 "{\n"
 "   background-color: #7e31b5;\n"
 "}\n"
@@ -2261,6 +2282,7 @@ class Ui_MainWindow(object):
         self.simbad_checkBox.setMinimumSize(QSize(0, 20))
         self.simbad_checkBox.setMaximumSize(QSize(16777215, 20))
         self.simbad_checkBox.setFont(font)
+        self.simbad_checkBox.setStyleSheet(u"")
         self.simbad_checkBox.setChecked(True)
 
         self.gridLayout_32.addWidget(self.simbad_checkBox, 3, 0, 1, 1, Qt.AlignHCenter)
@@ -2314,7 +2336,7 @@ class Ui_MainWindow(object):
         self.wise_frame_cat = QFrame(self.frame_5)
         self.wise_frame_cat.setObjectName(u"wise_frame_cat")
         self.wise_frame_cat.setStyleSheet(u"#wise_frame_cat {\n"
-"border: 2px solid#524eee;\n"
+"border: 2px solid #524eee;\n"
 "border-radius: 15px;\n"
 "\n"
 "}")
@@ -2389,7 +2411,11 @@ class Ui_MainWindow(object):
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setMinimumSize(QSize(200, 60))
         self.frame_3.setMaximumSize(QSize(16777215, 100))
-        self.frame_3.setStyleSheet(u"QPushButton{\n"
+        self.frame_3.setStyleSheet(u"QFrame {\n"
+"border: 0;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
 "background-color:  #6316AC;\n"
 "border-radius: 10px;\n"
 "	color: rgb(255, 255, 255);\n"
@@ -2400,7 +2426,8 @@ class Ui_MainWindow(object):
 "    \n"
 "QPushButton:pressed {\n"
 "    background-color: #7e31b5;\n"
-"}")
+"}\n"
+"")
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
         self.gridLayout_30 = QGridLayout(self.frame_3)
@@ -2830,43 +2857,6 @@ class Ui_MainWindow(object):
 
         self.gridLayout_19.addWidget(self.contact_groupBox, 5, 0, 1, 1)
 
-        self.icons_groupBox = QGroupBox(self.softinf_frame)
-        self.icons_groupBox.setObjectName(u"icons_groupBox")
-        self.icons_groupBox.setMinimumSize(QSize(0, 100))
-        self.icons_groupBox.setStyleSheet(u"#icons_groupBox {\n"
-"background: #2d3259;\n"
-"border-radius: 15px;\n"
-"	color: rgb(255, 255, 255);\n"
-"}\n"
-"#icons_groupBox::title {\n"
-"                subcontrol-origin: margin;\n"
-"                subcontrol-position: top left;    /* position at the top center */\n"
-"padding: 5px;\n"
-"                \n"
-"}\n"
-"")
-        self.gridLayout_10 = QGridLayout(self.icons_groupBox)
-        self.gridLayout_10.setObjectName(u"gridLayout_10")
-        self.gridLayout_10.setContentsMargins(-1, 6, -1, 9)
-        self.icon_textEdit = QTextEdit(self.icons_groupBox)
-        self.icon_textEdit.setObjectName(u"icon_textEdit")
-        self.icon_textEdit.setMinimumSize(QSize(0, 125))
-        self.icon_textEdit.setMaximumSize(QSize(16777215, 100))
-        self.icon_textEdit.setStyleSheet(u"#icon_textEdit {\n"
-"background: #2d3259;\n"
-"border-radius: 15px;\n"
-"padding: 10px;\n"
-"font-size: 9pt;\n"
-"color: #eeeeee;\n"
-"}")
-        self.icon_textEdit.setInputMethodHints(Qt.ImhMultiLine)
-        self.icon_textEdit.setTextInteractionFlags(Qt.LinksAccessibleByKeyboard|Qt.LinksAccessibleByMouse|Qt.TextBrowserInteraction|Qt.TextSelectableByKeyboard|Qt.TextSelectableByMouse)
-
-        self.gridLayout_10.addWidget(self.icon_textEdit, 0, 0, 1, 1)
-
-
-        self.gridLayout_19.addWidget(self.icons_groupBox, 6, 0, 1, 1)
-
         self.verticalSpacer_15 = QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
         self.gridLayout_19.addItem(self.verticalSpacer_15, 0, 0, 1, 1)
@@ -2905,106 +2895,45 @@ class Ui_MainWindow(object):
 
         self.gridLayout_19.addWidget(self.thx_textBrowser, 4, 0, 1, 1)
 
-
-        self.gridLayout_23.addWidget(self.softinf_frame, 0, 1, 2, 1)
-
-        self.oprsys_frame = QFrame(self.softwPage)
-        self.oprsys_frame.setObjectName(u"oprsys_frame")
-        self.oprsys_frame.setMinimumSize(QSize(325, 0))
-        self.oprsys_frame.setMaximumSize(QSize(400, 16777215))
-        self.oprsys_frame.setStyleSheet(u"#oprsys_frame{\n"
-"background-color: #1c1c27;\n"
+        self.icons_groupBox = QGroupBox(self.softinf_frame)
+        self.icons_groupBox.setObjectName(u"icons_groupBox")
+        self.icons_groupBox.setMinimumSize(QSize(0, 100))
+        self.icons_groupBox.setStyleSheet(u"#icons_groupBox {\n"
+"background: #2d3259;\n"
 "border-radius: 15px;\n"
 "	color: rgb(255, 255, 255);\n"
 "}\n"
+"#icons_groupBox::title {\n"
+"                subcontrol-origin: margin;\n"
+"                subcontrol-position: top left;    /* position at the top center */\n"
+"padding: 5px;\n"
+"                \n"
+"}\n"
 "")
-        self.oprsys_frame.setFrameShape(QFrame.Box)
-        self.oprsys_frame.setFrameShadow(QFrame.Raised)
-        self.gridLayout_21 = QGridLayout(self.oprsys_frame)
-        self.gridLayout_21.setObjectName(u"gridLayout_21")
-        self.label_24 = QLabel(self.oprsys_frame)
-        self.label_24.setObjectName(u"label_24")
-        self.label_24.setMinimumSize(QSize(0, 80))
-        self.label_24.setMaximumSize(QSize(16777215, 80))
-        self.label_24.setFont(font12)
-        self.label_24.setAlignment(Qt.AlignCenter)
+        self.gridLayout_10 = QGridLayout(self.icons_groupBox)
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setContentsMargins(-1, 6, -1, 9)
+        self.icon_textEdit = QTextEdit(self.icons_groupBox)
+        self.icon_textEdit.setObjectName(u"icon_textEdit")
+        self.icon_textEdit.setMinimumSize(QSize(0, 125))
+        self.icon_textEdit.setMaximumSize(QSize(16777215, 100))
+        self.icon_textEdit.setStyleSheet(u"#icon_textEdit {\n"
+"background: #2d3259;\n"
+"border-radius: 15px;\n"
+"padding: 10px;\n"
+"font-size: 9pt;\n"
+"color: #eeeeee;\n"
+"}")
+        self.icon_textEdit.setInputMethodHints(Qt.ImhMultiLine)
+        self.icon_textEdit.setTextInteractionFlags(Qt.LinksAccessibleByKeyboard|Qt.LinksAccessibleByMouse|Qt.TextBrowserInteraction|Qt.TextSelectableByKeyboard|Qt.TextSelectableByMouse)
 
-        self.gridLayout_21.addWidget(self.label_24, 1, 1, 1, 1)
-
-        self.verticalSpacer_7 = QSpacerItem(20, 60, QSizePolicy.Minimum, QSizePolicy.Fixed)
-
-        self.gridLayout_21.addItem(self.verticalSpacer_7, 5, 1, 1, 1)
-
-        self.verticalSpacer_8 = QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Fixed)
-
-        self.gridLayout_21.addItem(self.verticalSpacer_8, 3, 1, 1, 1)
-
-        self.horizontalSpacer_2 = QSpacerItem(30, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
-
-        self.gridLayout_21.addItem(self.horizontalSpacer_2, 4, 3, 1, 1)
-
-        self.verticalSpacer_9 = QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Fixed)
-
-        self.gridLayout_21.addItem(self.verticalSpacer_9, 0, 1, 1, 1)
-
-        self.horizontalSpacer = QSpacerItem(30, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
-
-        self.gridLayout_21.addItem(self.horizontalSpacer, 4, 0, 1, 1)
-
-        self.gridLayout_22 = QGridLayout()
-        self.gridLayout_22.setObjectName(u"gridLayout_22")
-        self.horizontalLayout_5 = QHBoxLayout()
-        self.horizontalLayout_5.setSpacing(20)
-        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.label_27 = QLabel(self.oprsys_frame)
-        self.label_27.setObjectName(u"label_27")
-        sizePolicy6.setHeightForWidth(self.label_27.sizePolicy().hasHeightForWidth())
-        self.label_27.setSizePolicy(sizePolicy6)
-        self.label_27.setMinimumSize(QSize(75, 75))
-        self.label_27.setMaximumSize(QSize(75, 75))
-        self.label_27.setPixmap(QPixmap(u":/icon/icon/windows10_2.png"))
-        self.label_27.setScaledContents(True)
-
-        self.horizontalLayout_5.addWidget(self.label_27)
-
-        self.label_28 = QLabel(self.oprsys_frame)
-        self.label_28.setObjectName(u"label_28")
-        font13 = QFont()
-        font13.setFamilies([u"Bahnschrift Light SemiCondensed"])
-        font13.setPointSize(20)
-        self.label_28.setFont(font13)
-
-        self.horizontalLayout_5.addWidget(self.label_28)
+        self.gridLayout_10.addWidget(self.icon_textEdit, 0, 0, 1, 1)
 
 
-        self.gridLayout_22.addLayout(self.horizontalLayout_5, 0, 0, 1, 1)
-
-        self.horizontalLayout_7 = QHBoxLayout()
-        self.horizontalLayout_7.setSpacing(20)
-        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.label_29 = QLabel(self.oprsys_frame)
-        self.label_29.setObjectName(u"label_29")
-        self.label_29.setMinimumSize(QSize(75, 75))
-        self.label_29.setMaximumSize(QSize(75, 75))
-        self.label_29.setPixmap(QPixmap(u":/icon/icon/windows-11.png"))
-        self.label_29.setScaledContents(True)
-
-        self.horizontalLayout_7.addWidget(self.label_29)
-
-        self.label_31 = QLabel(self.oprsys_frame)
-        self.label_31.setObjectName(u"label_31")
-        self.label_31.setFont(font13)
-
-        self.horizontalLayout_7.addWidget(self.label_31)
+        self.gridLayout_19.addWidget(self.icons_groupBox, 6, 0, 1, 1)
 
 
-        self.gridLayout_22.addLayout(self.horizontalLayout_7, 1, 0, 1, 1)
-
-
-        self.gridLayout_21.addLayout(self.gridLayout_22, 4, 1, 1, 1)
-
-
-        self.gridLayout_23.addWidget(self.oprsys_frame, 0, 2, 2, 1)
+        self.gridLayout_23.addWidget(self.softinf_frame, 0, 1, 2, 1)
 
         self.gridLayout_6 = QGridLayout()
         self.gridLayout_6.setObjectName(u"gridLayout_6")
@@ -3034,6 +2963,125 @@ class Ui_MainWindow(object):
 
 
         self.gridLayout_23.addLayout(self.gridLayout_6, 1, 0, 1, 1)
+
+        self.oprsys_frame = QFrame(self.softwPage)
+        self.oprsys_frame.setObjectName(u"oprsys_frame")
+        self.oprsys_frame.setMinimumSize(QSize(325, 0))
+        self.oprsys_frame.setMaximumSize(QSize(400, 16777215))
+        self.oprsys_frame.setStyleSheet(u"#oprsys_frame{\n"
+"background-color: #1c1c27;\n"
+"border-radius: 15px;\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"")
+        self.oprsys_frame.setFrameShape(QFrame.Box)
+        self.oprsys_frame.setFrameShadow(QFrame.Raised)
+        self.gridLayout_21 = QGridLayout(self.oprsys_frame)
+        self.gridLayout_21.setObjectName(u"gridLayout_21")
+        self.verticalSpacer_9 = QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.gridLayout_21.addItem(self.verticalSpacer_9, 0, 1, 1, 1)
+
+        self.label_24 = QLabel(self.oprsys_frame)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setMinimumSize(QSize(0, 80))
+        self.label_24.setMaximumSize(QSize(16777215, 80))
+        self.label_24.setFont(font12)
+        self.label_24.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_21.addWidget(self.label_24, 1, 1, 1, 1)
+
+        self.verticalSpacer_8 = QSpacerItem(20, 10, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.gridLayout_21.addItem(self.verticalSpacer_8, 2, 1, 1, 1)
+
+        self.verticalSpacer_7 = QSpacerItem(20, 60, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.gridLayout_21.addItem(self.verticalSpacer_7, 5, 1, 1, 1)
+
+        self.horizontalSpacer_2 = QSpacerItem(30, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.gridLayout_21.addItem(self.horizontalSpacer_2, 3, 2, 1, 1)
+
+        self.horizontalSpacer = QSpacerItem(30, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.gridLayout_21.addItem(self.horizontalSpacer, 3, 0, 1, 1)
+
+        self.gridLayout_22 = QGridLayout()
+        self.gridLayout_22.setObjectName(u"gridLayout_22")
+        self.horizontalLayout_7 = QHBoxLayout()
+        self.horizontalLayout_7.setSpacing(20)
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.label_29 = QLabel(self.oprsys_frame)
+        self.label_29.setObjectName(u"label_29")
+        self.label_29.setMinimumSize(QSize(75, 75))
+        self.label_29.setMaximumSize(QSize(75, 75))
+        self.label_29.setPixmap(QPixmap(u":/icon/icon/ubuntu-logo.png"))
+        self.label_29.setScaledContents(True)
+
+        self.horizontalLayout_7.addWidget(self.label_29)
+
+        self.label_31 = QLabel(self.oprsys_frame)
+        self.label_31.setObjectName(u"label_31")
+        font13 = QFont()
+        font13.setFamilies([u"Bahnschrift Light SemiCondensed"])
+        font13.setPointSize(20)
+        self.label_31.setFont(font13)
+
+        self.horizontalLayout_7.addWidget(self.label_31)
+
+
+        self.gridLayout_22.addLayout(self.horizontalLayout_7, 2, 0, 1, 1)
+
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setSpacing(20)
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.label_27 = QLabel(self.oprsys_frame)
+        self.label_27.setObjectName(u"label_27")
+        sizePolicy6.setHeightForWidth(self.label_27.sizePolicy().hasHeightForWidth())
+        self.label_27.setSizePolicy(sizePolicy6)
+        self.label_27.setMinimumSize(QSize(75, 75))
+        self.label_27.setMaximumSize(QSize(75, 75))
+        self.label_27.setPixmap(QPixmap(u":/icon/icon/windows10_2.png"))
+        self.label_27.setScaledContents(True)
+
+        self.horizontalLayout_5.addWidget(self.label_27)
+
+        self.label_28 = QLabel(self.oprsys_frame)
+        self.label_28.setObjectName(u"label_28")
+        self.label_28.setFont(font13)
+
+        self.horizontalLayout_5.addWidget(self.label_28)
+
+
+        self.gridLayout_22.addLayout(self.horizontalLayout_5, 0, 0, 1, 1)
+
+        self.horizontalLayout_10 = QHBoxLayout()
+        self.horizontalLayout_10.setSpacing(20)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.label_36 = QLabel(self.oprsys_frame)
+        self.label_36.setObjectName(u"label_36")
+        self.label_36.setMinimumSize(QSize(75, 75))
+        self.label_36.setMaximumSize(QSize(75, 75))
+        self.label_36.setPixmap(QPixmap(u":/icon/icon/windows-11.png"))
+        self.label_36.setScaledContents(True)
+
+        self.horizontalLayout_10.addWidget(self.label_36)
+
+        self.label_37 = QLabel(self.oprsys_frame)
+        self.label_37.setObjectName(u"label_37")
+        self.label_37.setFont(font13)
+
+        self.horizontalLayout_10.addWidget(self.label_37)
+
+
+        self.gridLayout_22.addLayout(self.horizontalLayout_10, 1, 0, 1, 1)
+
+
+        self.gridLayout_21.addLayout(self.gridLayout_22, 3, 1, 1, 1)
+
+
+        self.gridLayout_23.addWidget(self.oprsys_frame, 0, 2, 2, 1)
 
         self.pages.addWidget(self.softwPage)
 
@@ -3114,7 +3162,7 @@ class Ui_MainWindow(object):
         self.minimizeButton.setText("")
         self.restoreButton.setText("")
         self.closeButton.setText("")
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#eeeeee;\">v23.2</span></p></body></html>", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#eeeeee;\">v24.1</span></p></body></html>", None))
         self.astinf_groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Astronomical Times", None))
         self.daylighttextlabel.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">Daylight</span></p></body></html>", None))
         self.elevcoryes_radioBtn.setText(QCoreApplication.translate("MainWindow", u"Yes", None))
@@ -3311,7 +3359,7 @@ class Ui_MainWindow(object):
         self.comboBox.setItemText(137, QCoreApplication.translate("MainWindow", u"Wright's Tower (UK)", None))
 
         self.eleviconlabel.setText("")
-        self.utclineEdit.setText(QCoreApplication.translate("MainWindow", u"+03:00", None))
+        self.utclineEdit.setText(QCoreApplication.translate("MainWindow", u"Europe/Istanbul", None))
         self.utciconlabel.setText("")
         self.laticonlabel.setText("")
         self.obsiconlabel.setText("")
@@ -3357,12 +3405,12 @@ class Ui_MainWindow(object):
         self.staralt_radioButton.setText(QCoreApplication.translate("MainWindow", u"Staralt", None))
         self.starobs_radioButton.setText(QCoreApplication.translate("MainWindow", u"Starobs", None))
         self.plainTextEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"hh:mm:ss dd:mm:ss", None))
+        self.querylabel.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">Field of View (FOV) :</span></p></body></html>", None))
+        self.label_2.setText("")
+        self.queryiconlabel.setText("")
         self.sim_lineEdit.setText("")
         self.sim_lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Please enter the star's name or ICRS coordinate.", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Name / coord :", None))
-        self.label_2.setText("")
-        self.queryiconlabel.setText("")
-        self.querylabel.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">Field of View (FOV) :</span></p></body></html>", None))
         self.qregion_comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"deg", None))
         self.qregion_comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"arc min", None))
         self.qregion_comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"arc sec", None))
@@ -3403,39 +3451,39 @@ class Ui_MainWindow(object):
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600; color:#d5d5d5;\">INSTRUCTIONS FOR USE AND IMPORTANT NOTES </span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600; color:#ffaa00;\"># OBJECT VISIBILITY AND OBSERVABLE PHASE RANGE</span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">For object visibility, our program includes 138 observa"
-                        "tories. The information of the observatories other than the few observatories we have added is taken from </span><span style=\" font-style:italic; color:#d5d5d5;\">https://github.com/astropy/astropy-data/tree/gh-pages/coordinates</span><span style=\" color:#d5d5d5;\">. The existing observatory settings cannot be changed. Please select the manual option to make your own settings or edit the settings. You can click the &quot;Edit Settings&quot; button in the location, timezone and telescope limits settings section, fill in the relevant fields and edit the settings with the confirm button. When you open the program again, please click the &quot;Save Settings&quot; button to open the program with the settings you entered before. Please make sure you have entered the correct UTC. If you do not want to see the limits of the telescope on the object visibility graph, you can leave the minimum altitude and maximum altitude values of the telescope blank. </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; m"
-                        "argin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">You can select the day you will observe from the Date section. The program opens with today's date by default. Date is valid for both object visibility and Observable Phase Range part. </span></p>\n"
+                        "tories. The information of the observatories other than the few observatories we have added is taken from </span><span style=\" font-style:italic; color:#d5d5d5;\">https://github.com/astropy/astropy-data/tree/gh-pages/coordinates</span><span style=\" color:#d5d5d5;\">. The existing observatory settings cannot be changed. Please select the manual option to make your own settings or edit the settings. You can click the &quot;Edit Settings&quot; button in the location, timezone and telescope limits settings section, fill in the relevant fields and edit the settings with the confirm button. When you open the program again, please click the &quot;Save Settings&quot; button to open the program with the settings you entered before. Please make sure you choose the correct timezone. If you do not want to see the limits of the telescope on the object visibility graph, you can leave the minimum altitude and maximum altitude values of the telescope blank. </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; ma"
+                        "rgin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">You can select the day you will observe from the Date section. The program opens with today's date by default. Date is valid for both object visibility and Observable Phase Range part. </span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">In the Observable Phase Range on Selected Date section, period should be in days, and reference time should be in julian date. Phase range shows the phase range of the star you selected during the night hours of the date you selected. (for example, binary or multiple star systems). If astronomical night is not available for the current location, if astronomical twilight is available, the phase range is calculated according to the hours of the astronomical twilight interval. </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; mar"
-                        "gin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">For example, the result in Phase Range: </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; marg"
+                        "in-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">For example, the result in Phase Range: </span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">0.8704 - 0.9062 (1.0348) </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">Here 0.8704 is the beginning of the phase and 0.9062 is the end of the phase. The 1.0348 written in parentheses is the completed phase. For example, if the period of the star is 0.24 days (5.76 hours) and the night interval on that day is 6 hours, the observable phase for that night is 6 / 5.76 = 1.0416. Of course the phase range is always in the 0-1 range, we just show it so you can see the phase you've completed. According to the sample result, you completed one full phase and started to complete a new phase again. </span></"
-                        "p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">Here 0.8704 is the beginning of the phase and 0.9062 is the end of the phase. The 1.0348 written in parentheses is the completed phase. For example, if the period of the star is 0.24 days (5.76 hours) and the night interval on that day is 6 hours, the observable phase for that night is 6 / 5.76 = 1.0416. Of course the phase range is always in the 0-1 range, we just show it so you can see the phase you've completed. According to the sample result, you completed one full phase and started to complete a new phase again. </span></p"
+                        ">\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">In the &quot;Coordinates of the object&quot; section, enter the coordinates in RA (right ascension) and DEC (declination) formats. Enter the coordinate of only 1 object per line. For example, you should add the coordinates of the star Vega and Rigel as follows (hh:mm:ss dd:mm:ss): </span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">18 36 56.3363 +38 47 01.280 </span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">05 14 32.2721 -08 12 05.898 </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">You can chan"
-                        "ge the theme and two properties of the object visibility graph. You can adjust the theme and these features according to your desire by clicking the button with the settings icon on the far right in the object visibility section. In addition, after the graphic appears, you can adjust the settings related to appearance and naming from the upper part according to your desire. </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">Also, when you search from Simbad, you will see informations about the relevant object. When you click the &quot;+&quot; button, Simbad will add the coordinates of the object you are searching from the database to the &quot;Coordinates of the object&quot; part. You can search the Simbad database by object name or coordinate. </span><span style=\" font-weight:600; color:#d5d5d5;\">The query region option shows the objects in the area you specify. If you want to see only the"
-                        " information of the main object while searching (especially with the name), we recommend that you search in the range of 5-10 arcsec in the query region option. Apart from that, when you search in degrees, if there are too many objects in the area, the search may take a long time. For this reason, we have set a 1 degree limit for this program to work efficiently and properly for now. In the future, we will find a solution to this depending on the situation.</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">The Staralt option gives the altitude of the related object or objects on the date you selected. When Staralt is selected, when you click the &quot;Show Object Visibility&quot; button, the values written on the related object or objects every hour on the graph that comes before you are the angular distance value of the related object to the Moon. It also automatically adds the name of the r"
-                        "elevant object to the chart. It gets the names from the simbad database. </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">You can chang"
+                        "e the theme and two properties of the object visibility graph. You can adjust the theme and these features according to your desire by clicking the button with the settings icon on the far right in the object visibility section. In addition, after the graphic appears, you can adjust the settings related to appearance and naming from the upper part according to your desire. </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">Also, when you search from Simbad, you will see informations about the relevant object. When you click the &quot;+&quot; button, Simbad will add the coordinates of the object you are searching from the database to the &quot;Coordinates of the object&quot; part. You can search the Simbad database by object name or coordinate. </span><span style=\" font-weight:600; color:#d5d5d5;\">The query region option shows the objects in the area you specify. If you want to see only the "
+                        "information of the main object while searching (especially with the name), we recommend that you search in the range of 5-10 arcsec in the query region option. Apart from that, when you search in degrees, if there are too many objects in the area, the search may take a long time. For this reason, we have set a 1 degree limit for this program to work efficiently and properly for now. In the future, we will find a solution to this depending on the situation.</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">The Staralt option gives the altitude of the related object or objects on the date you selected. When Staralt is selected, when you click the &quot;Show Object Visibility&quot; button, the values written on the related object or objects every hour on the graph that comes before you are the angular distance value of the related object to the Moon. It also automatically adds the name of the re"
+                        "levant object to the chart. It gets the names from the simbad database. </span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">Starobs, on the other hand, gives the one-year altitude values of the related object or objects. </span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">In the astronomical times section, there are important hours for observation. Elevation(for sea level) correction option should be used under certain conditions. For example, for an observer on a mountain, it would be correct to use this option if the horizon line is below its current position. In summary, consider the horizon line at sea level and consider an observer on the mountain at this position. This option corrects for sunrise and sunset, taking into account elevation in addition to atmospheric refra"
-                        "ction and solar disk diameter. </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">In the astronomical times section, there are important hours for observation. Elevation(for sea level) correction option should be used under certain conditions. For example, for an observer on a mountain, it would be correct to use this option if the horizon line is below its current position. In summary, consider the horizon line at sea level and consider an observer on the mountain at this position. This option corrects for sunrise and sunset, taking into account elevation in addition to atmospheric refrac"
+                        "tion and solar disk diameter. </span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">It also contains information about the Moon. You can see the Moon's rise, sunset, percent illuminated and phase for the relevant location and date. The position and phase of the Moon in the sky is very important in scientific observations and astrophotography. </span></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600; color:#ffaa00;\"># ASTRONOMICAL CATALOGS SEARCH</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">When you click on the search button on the 2nd line of the main menu, you will see the astronomical catalogs search section. You can search in SIMBAD, 2MASS "
-                        "All-Sky Point Source Catalog, AllWise Source Catalog, Gaia DR3 and ZTF DR 19 catalogues. You can also search in more than one catalogue. You can also limit the SIMBAD search to stars.</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">Apart from this, when you search in degrees, the search may take a long time if there are many objects in the area. For this reason, we have set a 1 degree limit for now in order for this program to work efficiently and properly. We will find a solution to this in the future, depending on the situation. Enter the area seen by your CCD or CMOS into the FOV value. For now the FOV is limited to a square area. We plan to customize this a lot in the future. After entering the FOV value and selecting the catalogs you want, click on the &quot;Search and Show FOV&quot; button and the search will start and when the search is finished, the results screen will open. The resul"
-                        "ts screen includes an area image depending on your FOV value. You can see the results by clicking on the icons of the catalogs you searched in the vertical menu. Objects that you click or select with arrows in the grid are marked with a red square in the FOV area.</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">When you click on the search button on the 2nd line of the main menu, you will see the astronomical catalogs search section. You can search in SIMBAD, 2MASS A"
+                        "ll-Sky Point Source Catalog, AllWise Source Catalog, Gaia DR3 and ZTF DR 19 catalogues. You can also search in more than one catalogue. You can also limit the SIMBAD search to stars.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">Apart from this, when you search in degrees, the search may take a long time if there are many objects in the area. For this reason, we have set a 1 degree limit for now in order for this program to work efficiently and properly. We will find a solution to this in the future, depending on the situation. Enter the area seen by your CCD or CMOS into the FOV value. For now the FOV is limited to a square area. We plan to customize this a lot in the future. After entering the FOV value and selecting the catalogs you want, click on the &quot;Search and Show FOV&quot; button and the search will start and when the search is finished, the results screen will open. The result"
+                        "s screen includes an area image depending on your FOV value. You can see the results by clicking on the icons of the catalogs you searched in the vertical menu. Objects that you click or select with arrows in the grid are marked with a red square in the FOV area.</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#d5d5d5;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">In the SIMBAD section, you can filter the results according to color B-V, G-V, U-B, g-r and i-z color indices. In the 2MASS section, you can filter the results according to J-H, H-K, J-K color indices. The reason why we put color indices is that they have an important place in astronomy. It is most commonly used in analysis and is used in the selection of check and comparison stars for observations of binary star"
-                        "s or multiple star systems.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">In the SIMBAD section, you can filter the results according to color B-V, G-V, U-B, g-r, i-z, J-H, H-K and J-K color indices. In the 2MASS section, you can filter the results according to J-H, H-K, J-K color indices. The reason why we put color indices is that they have an important place in astronomy. It is most commonly used in analysis and is used in the selection of check and comparison stars for observations "
+                        "of binary stars or multiple star systems.</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#d5d5d5;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">For example, when J-H is selected in the 2MASS section, you must enter the J-H value of your main star in the &quot;Index Value&quot; box and then enter a value for a range in the &quot;Range \u00b1&quot; box. For example, let's say the J-H index of our main star is 0.500. When we filter by entering 0.050 in the &quot;Range \u00b1&quot; box, you will only see objects with J-H index between 0.450 and 0.550. These indices and filtering options will help you, but apart from these indices, the characteristics of the main star, the comparison star and the check star, such as their spectral type, object type and whether they show period change or not,"
-                        " whether they show brightness change or not, are also very important. Therefore, do not just stick to this program. We always recommend you analyze in more detail.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">For example, when J-H is selected in the 2MASS section, you must enter the J-H value of your main star in the &quot;Index Value&quot; box and then enter a value for a range in the &quot;Range \u00b1&quot; box. For example, let's say the J-H index of our main star is 0.500. When we filter by entering 0.050 in the &quot;Range \u00b1&quot; box, you will only see objects with J-H index between 0.450 and 0.550. These indices and filtering options will help you, but apart from these indices, the characteristics of the main star, the comparison star and the check star, such as their spectral type, object type and whether they show period "
+                        "change or not, whether they show brightness change or not, are also very important. Therefore, do not just stick to this program. We always recommend you analyze in more detail.</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#d5d5d5;\"><br /></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#d5d5d5;\"><br /></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#d5d5d5;\">\u00a0 </span></p></body></html>", None))
@@ -3445,24 +3493,6 @@ class Ui_MainWindow(object):
         self.contact_groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Contact", None))
         self.label_61.setText("")
         self.label_60.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"justify\"><span style=\" font-size:8pt; font-weight:600; font-style:italic; color:#eeeeee;\">keremdive@gmail.com</span></p><p align=\"justify\"><span style=\" font-size:8pt; font-weight:600; font-style:italic; color:#eeeeee;\">korhankara98@gmail.com</span></p></body></html>", None))
-        self.icons_groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Icons", None))
-        self.icon_textEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://icons8.com\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://icons8.com</span></a></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://www.clipartmax.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://www.clipartmax.com/</span></a></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0"
-                        "px;\"><a href=\"https://feathericons.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://feathericons.com/</span></a></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://brandeps.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://brandeps.com/</span></a></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://brandeps.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://cds.unistra.fr/</span></a></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://brandeps.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://irsa.ipac.caltech.edu/</span></a></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; m"
-                        "argin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://wise2.ipac.caltech.edu/</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://www.cosmos.esa.int/web/gaia/data-release-3</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://www.ztf.caltech.edu/</span></p>\n"
-"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; text-decoration: underline; color:#eeeeee;\"><br /></p></body></html>", None))
-        self.icon_textEdit.setPlaceholderText("")
         self.label_57.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">SOFTWARE INFORMATION</span></p></body></html>", None))
         self.thx_textBrowser.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -3485,13 +3515,35 @@ class Ui_MainWindow(object):
 "<p align=\"center\" style=\"-qt-paragra"
                         "ph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"><br /></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">for their contributions</span></p></body></html>", None))
-        self.label_24.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">OPERATING SYSTEMS</span></p></body></html>", None))
-        self.label_27.setText("")
-        self.label_28.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">Windows 10</span></p></body></html>", None))
-        self.label_29.setText("")
-        self.label_31.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">Windows 11</span></p></body></html>", None))
+        self.icons_groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Icons", None))
+        self.icon_textEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://icons8.com\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://icons8.com</span></a></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://www.clipartmax.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://www.clipartmax.com/</span></a></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0"
+                        "px;\"><a href=\"https://feathericons.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://feathericons.com/</span></a></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://feathericons.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://www.iconpacks.net/</span></a></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://brandeps.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://brandeps.com/</span></a></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://brandeps.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://cds.unistra.fr/</span></a></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; m"
+                        "argin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://brandeps.com/\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://irsa.ipac.caltech.edu/</span></a></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://wise2.ipac.caltech.edu/</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://www.cosmos.esa.int/web/gaia/data-release-3</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" text-decoration: underline; color:#eeeeee;\">https://www.ztf.caltech.edu/</span></p>\n"
+"<p align=\"center\" style=\"-qt-paragr"
+                        "aph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; text-decoration: underline; color:#eeeeee;\"><br /></p></body></html>", None))
+        self.icon_textEdit.setPlaceholderText("")
         self.label_30.setText("")
         self.label_26.setText("")
         self.label_41.setText("")
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">OPERATING SYSTEMS</span></p></body></html>", None))
+        self.label_29.setText("")
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">Ubuntu</span></p></body></html>", None))
+        self.label_27.setText("")
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">Windows 10</span></p></body></html>", None))
+        self.label_36.setText("")
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#eeeeee;\">Windows 11</span></p></body></html>", None))
     # retranslateUi
 

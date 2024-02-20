@@ -142,6 +142,38 @@ QComboBox:hover{
 background-color: #524eee;
 }
 
+QCheckBox::indicator {
+width: 18px;
+height: 18px;
+border-radius:8px;
+}
+
+QCheckBox::indicator::unchecked
+{
+   background-color: #eeeeee;
+}
+QCheckBox::indicator:unchecked:hover
+{
+    background-color: #6316AC;
+}
+QCheckBox::indicator::checked 
+{
+   image: url(:/icon/icon/check.svg)
+}
+
+QCheckBox::indicator:checked:pressed 
+{
+   background-color: #7e31b5;
+}
+
+QCheckBox::indicator:unchecked:pressed 
+{
+   background-color: #7e31b5;
+}
+
+QCheckBox{
+color: #eeeeee;
+}
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -249,38 +281,6 @@ color: #eeeeee
          </property>
         </widget>
        </item>
-       <item row="3" column="0" colspan="2">
-        <widget class="QCheckBox" name="asttime_checkBox">
-         <property name="font">
-          <font>
-           <family>Segoe UI</family>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string>Show astronomical time intervals (Staralt)</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <spacer name="verticalSpacer_4">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>15</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item row="0" column="1">
         <widget class="QWidget" name="graphwidget" native="true">
          <property name="minimumSize">
@@ -371,7 +371,42 @@ QRadioButton::indicator:unchecked:pressed
          </layout>
         </widget>
        </item>
+       <item row="1" column="1">
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>15</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
        <item row="2" column="0" colspan="2">
+        <widget class="QCheckBox" name="moonalt_checkBox">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Show moon altitude (Staralt)</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
         <widget class="QCheckBox" name="moondist_checkBox">
          <property name="font">
           <font>
@@ -384,6 +419,28 @@ QRadioButton::indicator:unchecked:pressed
          </property>
          <property name="text">
           <string>Show moon distance (Staralt)</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QCheckBox" name="asttime_checkBox">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Show astronomical time intervals (Staralt)</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
          </property>
         </widget>
        </item>

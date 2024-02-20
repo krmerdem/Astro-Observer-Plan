@@ -1,7 +1,11 @@
 <RCC>
   <qresource prefix="icon">
+    <file>icon/parameters.png</file>
+    <file>icon/color-icon.svg</file>
+    <file>icon/ubuntu-logo.png</file>
     <file>icon/catalog2.png</file>
     <file>icon/catalog.png</file>
+    <file>icon/check.svg</file>
     <file>icon/WISE_logo.png</file>
     <file>icon/ztf_logo.png</file>
     <file>icon/Logo_Gaia.png</file>

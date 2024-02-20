@@ -18,7 +18,7 @@ target = Executable(
     script="AstroObserverPlan.py",
     base="Win32GUI",
     icon="icon/icon.ico",
-    shortcut_name='Astro OV',
+    shortcut_name='Astro OP',
     shortcut_dir="DesktopFolder"
 )
 

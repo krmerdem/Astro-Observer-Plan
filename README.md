@@ -12,7 +12,7 @@ v24.1 Notes
 - Pecaut&Mamajek's EEM_dwarf_UBVIJHK_colors_Teff table has been added to the software, and you can find the appropriate color index values from this table, and view the star parameters depending on this table according to the color indexes of each star selected in the search results. Please note that this applies to main sequence stars.
 - Improved the FOV display in search results. You can show all the objects in the Simbad, 2MASS and Gaia DR3 results on the FOV screen, and when you click on the marked objects on the image, the object is marked in the table in the relevant catalog.
 - Necessary adjustments were made to make the simbad search results in the object visibility section more readable.
-- Ubuntu version added.
+- Ubuntu version added. (currently being edited)
 
 ## Download and Installing Software
 
@@ -34,7 +34,7 @@ Follow the necessary steps to make it work in two different window managers: x11
 - After the extraction process is completed, enter the folder and right-click on AstroObserverPlan. "Executable as Program" at the bottom of the window should be checked or open. After this stage, you can run the software by double-clicking on AstroObserverPlan.
 - Alternatively, go into the AstroObserverPlan folder, right-click on an empty area and click "Open in terminal". You can open the software by typing ./AstroObserverPlan into the terminal.
 
-[Astro Observer Plan v24.1 Download - (Ubuntu 22.04+)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2.1/AstroObserverPlan.tar.gz)
+[Astro Observer Plan v24.1 Download - (Ubuntu 22.04+) - (currently being edited)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2.1/AstroObserverPlan.tar.gz) 
 
 ## Installing Dependencies
 

@@ -18,7 +18,7 @@ v24.1 Notes
 
 The software is compatible with 64-bit versions of Windows 10 and Windows 11. Currently, the software has a ZIP extension. After downloading the ZIP, extract the archive and run AstroObserverPlan.exe
 
-[Astro Observer Plan v24.1 Download - (Windows 10/11 x64)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v23.2.1/Astro.Observer.Plan.zip)
+[Astro Observer Plan v24.1 Download - (Windows 10/11 x64)](https://github.com/krmerdem/Astro-Observer-Plan/releases/download/v24.1/Astro.Observer.Plan.zip)
 
 Instructions to run on Ubuntu:
 Follow the necessary steps to make it work in two different window managers: x11 and wayland.

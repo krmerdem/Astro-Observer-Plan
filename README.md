@@ -1,3 +1,5 @@
+The new update will be released on February 17, 2025.
+
 # ASTRO OBSERVER PLAN - PySide6
 
 ![header](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/06b5baa8-9c8d-4419-9ad1-a7f8db797a71)

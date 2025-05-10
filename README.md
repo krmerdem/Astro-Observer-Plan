@@ -1,4 +1,4 @@
-## The new update will be released on April 7, 2025
+## The new update will be released on July 10, 2025
 
 # ASTRO OBSERVER PLAN - PySide6
 

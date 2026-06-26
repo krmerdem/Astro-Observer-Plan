@@ -1,8 +1,10 @@
-## The new update will be released on July 10, 2025
-
 # ASTRO OBSERVER PLAN - PySide6
 
 ![header](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/06b5baa8-9c8d-4419-9ad1-a7f8db797a71)
+
+![Python](https://img.shields.io/badge/python-3.11%2B-blue)
+![PySide6](https://img.shields.io/badge/GUI-PySide6-green)
+![License](https://img.shields.io/github/license/krmerdem/Astro-Observer-Plan)
 
 Astronomy software built with Python and PySide 6 for astronomical observations.
 
@@ -44,6 +46,43 @@ Follow the necessary steps to make it work in two different window managers: x11
 
 **Dependencies used in the software** | PySide6, Matplotlib, NumPy, Astroquery, Astropy, Ephem, pytz
 
+## Running from Source
+
+If you prefer to run the software directly from the source code instead of the
+packaged release:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/krmerdem/Astro-Observer-Plan.git
+cd Astro-Observer-Plan
+
+# 2. (Recommended) Create and activate a virtual environment
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+
+# 3. Install the dependencies
+pip install -r requirements.txt
+
+# 4. Run the application entry point
+python AstroObserverPlan.py
+```
+
+> **Note:** The main entry point `AstroObserverPlan.py` ties the UI and the
+> calculations together. The `UI/` directory contains the Qt Designer generated
+> interface code, while `observatories.py`, `pecaut_mamajek.py` and
+> `pm_lookup.py` provide the data and helper logic.
+
+## Development
+
+```bash
+pip install pytest
+pytest                 # run the data-integrity and pm_lookup test suite
+```
+
+Continuous integration (GitHub Actions) runs the test suite and a syntax check
+on every push and pull request. Contributions are welcome — please open an issue
+or a pull request. See the contact section below to reach the authors.
+
 ## Introduction
 
 The software calculates the daily or annual altitude of the selected star or object according to its position on Earth and its angular distance to the Moon and displays it on the graph. It also calculates the observable phase range for binary stars or multiple star systems. It also displays astronomical times depending on the location. There is a degree-minute-second or hour-minute-second converter required for astronomy in the software. In the software, you can search Simbad, 2MASS, WISE, Gaia DR3 and ZTF DR19 catalogs at the same time.
@@ -57,7 +96,7 @@ Some tables in Pecaut&Mamajek's 2013 article titled "Intrinsic Colors, Temperatu
 
 ### OBJECT VISIBILITY AND OBSERVABLE PHASE RANGE
 
-For object visibility, software includes 138 observatories. The information of the observatories other than the few observatories we have added is taken from https://github.com/astropy/astropy-data/tree/gh-pages/coordinates. The existing observatory settings cannot be changed. Please select the manual option to make your own settings or edit the settings. You can click the "Edit Settings" button in the location, timezone and telescope limits settings section, fill in the relevant fields and edit the settings with the confirm button. When you open the software again, please click the "Save Settings" button to open the software with the settings you entered before. Please make sure you choose the correct timezone. If you do not want to see the limits of the telescope on the object visibility graph, you can leave the minimum altitude and maximum altitude values of the telescope blank.
+For object visibility, software includes 137 observatories. The information of the observatories other than the few observatories we have added is taken from https://github.com/astropy/astropy-data/tree/gh-pages/coordinates. The existing observatory settings cannot be changed. Please select the manual option to make your own settings or edit the settings. You can click the "Edit Settings" button in the location, timezone and telescope limits settings section, fill in the relevant fields and edit the settings with the confirm button. When you open the software again, please click the "Save Settings" button to open the software with the settings you entered before. Please make sure you choose the correct timezone. If you do not want to see the limits of the telescope on the object visibility graph, you can leave the minimum altitude and maximum altitude values of the telescope blank.
 
 ![1](https://github.com/krmerdem/Astro-Observer-Plan/assets/115490296/d28ccf23-ad02-437e-a986-99daaf3178a1)
 

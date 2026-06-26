@@ -1,0 +1,7 @@
+PySide6
+matplotlib
+numpy
+astroquery
+astropy
+ephem
+pytz

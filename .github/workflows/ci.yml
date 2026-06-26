@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      # Veri ve pm_lookup testleri GUI bagimliligi gerektirmez,
+      # bu nedenle agir PySide6/astropy kurulumu yapilmaz.
+      - name: Run tests
+        run: pytest
+
+      - name: Syntax check (tum kaynak derlenebiliyor mu?)
+        run: python -m compileall -q observatories.py pecaut_mamajek.py pm_lookup.py UI/

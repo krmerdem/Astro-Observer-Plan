@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import*
 
-from matplotlib.backends.backend_qt5agg import FigureCanvas
-from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
+from matplotlib.backends.backend_qtagg import FigureCanvas
+from matplotlib.backends.backend_qtagg import NavigationToolbar2QT as NavigationToolbar
 
 from matplotlib.figure import Figure
 import matplotlib.ticker as ticker
@@ -28,7 +28,7 @@ class MplWidget(QWidget):
         self.canvas.axes.set_xlim(0, 2.05)
         self.canvas.axes.set_ylim(0, 90)
         self.canvas.axes.set_xlabel('Universal Time Coordinated (UTC)')
-        self.canvas.axes.set_ylabel('Altitude ($^\circ$)')
+        self.canvas.axes.set_ylabel(r'Altitude ($^\circ$)')
         # self.canvas.figure.set_facecolor("#FAFAFA")
         # self.canvas.axes.set_facecolor("#FAFAFA")
         self.canvas._draw_border = True
